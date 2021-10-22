@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:text="- On ne parle pas de Gartic Meme\n- On ne parle pas de Gartic Meme\n- L'amusement est obligatoire"
         android:textColor="#008000"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
