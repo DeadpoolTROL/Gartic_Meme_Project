@@ -13,9 +13,9 @@ public class PlayersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_players);
+
         Button bouton;
         bouton = (Button) findViewById(R.id.button2);
-
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
