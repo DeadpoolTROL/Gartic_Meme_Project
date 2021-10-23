@@ -46,7 +46,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="- On ne parle pas de Gartic Meme\n- On ne parle pas de Gartic Meme\n- L'amusement est obligatoire"
+        android:text="- On ne parle pas de Gartic Meme\n\n- On ne parle pas de Gartic Meme\n\n- L'amusement est obligatoire"
         android:textColor="#008000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
