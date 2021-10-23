@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GarticMEMEProject">
         <activity
+            android:name=".PlayersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ParametreActivity"
+            android:exported="true" />
+        <activity
             android:name=".FinActivity"
             android:exported="true" />
         <activity
