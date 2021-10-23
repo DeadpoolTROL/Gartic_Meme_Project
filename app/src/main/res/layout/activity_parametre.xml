@@ -22,15 +22,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="212dp"
-        android:text="Nombre de Joueurs"
+        android:text="Nombre de Joueurs : 5"
         android:textColor="#438C17"
-        android:textSize="40sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/seekBar2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.031" />
+        app:layout_constraintVertical_bias="0.36" />
 
     <TextView
         android:id="@+id/textView6"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="Thèmes"
         android:textColor="#438C17"
-        android:textSize="40sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -48,17 +48,26 @@
 
     <SeekBar
         android:id="@+id/seekBar2"
-        android:layout_width="351dp"
-        android:layout_height="128dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:background="#0003A9F4"
         android:backgroundTint="#2196F3"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="423dp" />
+        android:scaleX="2"
+        android:scaleY="2"
+        android:max="10"
+        android:progress="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="137dp"
         android:layout_height="84dp"
+        android:layout_gravity="center"
         android:text="Let's go"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,8 +77,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="372dp"
-        android:layout_height="44dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
@@ -81,8 +91,9 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText"
-        android:layout_width="373dp"
-        android:layout_height="44dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
         android:background="#3F51B5"
         android:hint="Entrer un thème"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
