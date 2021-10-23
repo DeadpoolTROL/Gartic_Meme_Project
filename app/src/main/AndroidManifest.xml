@@ -11,16 +11,29 @@
         android:theme="@style/Theme.GarticMEMEProject">
         <activity
             android:name=".PlayersActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ReglesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".ParametreActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".FinActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
