@@ -11,7 +11,8 @@
         android:theme="@style/Theme.GarticMEMEProject">
         <activity
             android:name=".CreationmemeActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".PlayersActivity"
             android:exported="true"
