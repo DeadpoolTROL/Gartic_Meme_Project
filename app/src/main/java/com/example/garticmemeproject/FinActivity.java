@@ -14,7 +14,7 @@ public class FinActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fin);
 
         Button bouton;
-        bouton = (Button) findViewById(R.id.button4);
+        bouton = (Button) findViewById(R.id.buttonfin);
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

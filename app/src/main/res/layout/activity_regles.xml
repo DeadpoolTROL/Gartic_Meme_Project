@@ -7,7 +7,7 @@
     android:background="#212729">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo2"
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_marginStart="16dp"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/pngegg" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/rulestext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonregles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -38,12 +38,12 @@
         android:text="Compris"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/logo2"
         app:layout_constraintTop_toTopOf="parent"
         app:rippleColor="#2196F3" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/regle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="- On ne parle pas de Gartic Meme\n\n- On ne parle pas de Gartic Meme\n\n- L'amusement est obligatoire"
@@ -53,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/rulestext"
         app:layout_constraintVertical_bias="0.084" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

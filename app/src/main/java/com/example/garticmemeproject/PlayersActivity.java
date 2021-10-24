@@ -15,7 +15,7 @@ public class PlayersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_players);
 
         Button bouton;
-        bouton = (Button) findViewById(R.id.button2);
+        bouton = (Button) findViewById(R.id.buttonjoueur);
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

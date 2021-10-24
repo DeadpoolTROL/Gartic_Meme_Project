@@ -17,8 +17,8 @@ public class ParametreActivity extends AppCompatActivity {
 
         SeekBar seekbar;
         TextView Nbjoueurs;
-        seekbar = (SeekBar)findViewById(R.id.seekBar2);
-        Nbjoueurs = (TextView)findViewById(R.id.textView4);
+        seekbar = (SeekBar)findViewById(R.id.seekBar);
+        Nbjoueurs = (TextView)findViewById(R.id.nbjoueurtext);
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b)
@@ -38,7 +38,7 @@ public class ParametreActivity extends AppCompatActivity {
         });
 
         Button bouton;
-        bouton = (Button) findViewById(R.id.button3);
+        bouton = (Button) findViewById(R.id.buttonsetting);
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -7,7 +7,7 @@
     android:background="#212729">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/logo4"
         android:layout_width="295dp"
         android:layout_height="313dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,15 +24,15 @@
         android:text="Joueur X"
         android:textColor="#438C17"
         android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonjoueur"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/logo4"
         app:layout_constraintVertical_bias="0.525" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonjoueur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="120dp"

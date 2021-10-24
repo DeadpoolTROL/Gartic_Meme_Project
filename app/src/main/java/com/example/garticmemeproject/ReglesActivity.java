@@ -14,7 +14,7 @@ public class ReglesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_regles);
 
         Button bouton;
-        bouton = (Button) findViewById(R.id.button);
+        bouton = (Button) findViewById(R.id.buttonregles);
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
