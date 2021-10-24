@@ -2,6 +2,7 @@ package com.example.garticmemeproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -28,8 +29,11 @@ public class CreationmemeActivity extends AppCompatActivity {
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.exit(0);
-
+                Intent intent = new Intent(
+                        CreationmemeActivity.this,
+                        FinActivity.class
+                );
+                startActivity(intent);
             }
         });
 
@@ -50,7 +54,11 @@ public class CreationmemeActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                System.exit(0);
+                Intent intent = new Intent(
+                        CreationmemeActivity.this,
+                        FinActivity.class
+                );
+                startActivity(intent);
             }
         }.start();
     }

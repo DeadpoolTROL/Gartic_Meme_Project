@@ -3,6 +3,7 @@ package com.example.garticmemeproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,8 +20,11 @@ public class PlayersActivity extends AppCompatActivity {
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.exit(0);
-
+                Intent intent = new Intent(
+                        PlayersActivity.this,
+                        CreationmemeActivity.class
+                );
+                startActivity(intent);
             }
         });
     }}
