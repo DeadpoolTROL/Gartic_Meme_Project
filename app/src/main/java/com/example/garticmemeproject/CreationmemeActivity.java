@@ -27,6 +27,13 @@ public class CreationmemeActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_creationmeme);
 
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(PlayersActivity.EXTRA_MESSAGE2);
+
+        // Capture the layout's TextView and set the string as its text
+        TextView textView = findViewById(R.id.themecreate);
+        textView.setText("Thème : " + message);
+
 //---------------------------------------Bouton---------------------------------------------------------------------------
 
         Button bouton;

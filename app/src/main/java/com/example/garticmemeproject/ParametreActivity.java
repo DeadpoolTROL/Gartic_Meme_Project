@@ -16,6 +16,7 @@ public class ParametreActivity extends AppCompatActivity {
 
     private SeekBar seekbar;
     private TextView Nbjoueurs;
+    public static final String EXTRA_MESSAGE = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,9 @@ public class ParametreActivity extends AppCompatActivity {
                         ParametreActivity.this,
                         PlayersActivity.class
                 );
+                EditText editText = (EditText) findViewById(R.id.EditTheme);
+                String message = editText.getText().toString();
+                intent.putExtra(EXTRA_MESSAGE, message);
                 startActivity(intent);
             }
         });
