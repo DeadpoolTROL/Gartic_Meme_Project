@@ -11,6 +11,7 @@
         android:id="@+id/nomapp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Gartic Meme"
         android:textColor="#438C17"
         android:textSize="50sp"

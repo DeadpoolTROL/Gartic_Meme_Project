@@ -18,6 +18,7 @@ public class CreationmemeActivity extends AppCompatActivity {
     private TextView time;
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliseconds = 90000; //1 min 30
+    public static final String EXTRA_MESSAGE3 = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,6 @@ public class CreationmemeActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(PlayersActivity.EXTRA_MESSAGE2);
 
-        // Capture the layout's TextView and set the string as its text
         TextView textView = findViewById(R.id.themecreate);
         textView.setText("Thème : " + message);
 
@@ -43,8 +43,9 @@ public class CreationmemeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(
                         CreationmemeActivity.this,
-                        FinActivity.class
+                        VoteActivity.class
                 );
+                intent.putExtra(EXTRA_MESSAGE3, message);
                 startActivity(intent);
             }
         });
