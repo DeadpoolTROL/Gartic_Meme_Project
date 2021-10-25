@@ -8,10 +8,14 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class ParametreActivity extends AppCompatActivity {
+
+    private SeekBar seekbar;
+    private TextView Nbjoueurs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +25,9 @@ public class ParametreActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_parametre);
 
-        SeekBar seekbar;
-        TextView Nbjoueurs;
         seekbar = (SeekBar)findViewById(R.id.seekBar);
         Nbjoueurs = (TextView)findViewById(R.id.nbjoueurtext);
+
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b)

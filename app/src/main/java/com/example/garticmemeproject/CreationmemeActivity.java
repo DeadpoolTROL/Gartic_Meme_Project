@@ -18,7 +18,6 @@ public class CreationmemeActivity extends AppCompatActivity {
     private TextView time;
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliseconds = 90000; //1 min 30
-    private boolean timeRunning;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +26,7 @@ public class CreationmemeActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_creationmeme);
+
 //---------------------------------------Bouton---------------------------------------------------------------------------
 
         Button bouton;
