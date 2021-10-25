@@ -30,10 +30,10 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pngaaa_com_2029594" />
+        app:srcCompat="@drawable/imgmonstre" />
 
     <ImageView
-        android:id="@+id/Meme"
+        android:id="@+id/meme"
         android:layout_width="350dp"
         android:layout_height="350dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.421"
-        app:srcCompat="@drawable/d20n5ycwwaerok3" />
+        app:srcCompat="@drawable/meme1" />
 
     <TextView
         android:id="@+id/time"
@@ -66,7 +66,7 @@
         android:text="TextView"
         android:textColor="#438C17"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/Meme"
+        app:layout_constraintBottom_toTopOf="@+id/meme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toEndOf="@+id/imagejoueurx"

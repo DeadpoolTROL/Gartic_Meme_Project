@@ -5,17 +5,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.Random;
+
 public class CreationmemeActivity extends AppCompatActivity {
 
     private TextView time;
+    private ImageView imageView;
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliseconds = 90000; //1 min 30
     public static final String EXTRA_MESSAGE3 = "";
@@ -33,6 +38,16 @@ public class CreationmemeActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.themecreate);
         textView.setText("Thème : " + message);
+
+//        this.imageView = (ImageView) this.findViewById(R.id.imagejoueurx);
+//        this.imageView.setImageResource(R.drawable."meme"+Random.nextInt(6));
+
+        ImageView imgView = (ImageView) findViewById(R.id.meme);
+        Random rand = new Random();
+        int rndInt = rand.nextInt(6) + 1;
+        String imgName = "meme" + rndInt;
+        int id = getResources().getIdentifier(imgName, "drawable", getPackageName());
+        imgView.setImageResource(id);
 
 //---------------------------------------Bouton---------------------------------------------------------------------------
 
