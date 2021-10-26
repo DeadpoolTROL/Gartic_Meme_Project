@@ -30,7 +30,6 @@ public class CreationmemeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_creationmeme);
 
         Intent intent = getIntent();
@@ -38,9 +37,6 @@ public class CreationmemeActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.themecreate);
         textView.setText("Thème : " + message);
-
-//        this.imageView = (ImageView) this.findViewById(R.id.imagejoueurx);
-//        this.imageView.setImageResource(R.drawable."meme"+Random.nextInt(6));
 
         ImageView imgView = (ImageView) findViewById(R.id.meme);
         Random rand = new Random();
