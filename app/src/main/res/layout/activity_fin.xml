@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:gravity="center"
             android:text="Résulats"
             android:textColor="#438C17"
             android:textSize="40sp"
@@ -71,7 +72,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.683"
-            app:srcCompat="@drawable/_79985255024e95053065e316d3222da" />
+            app:srcCompat="@drawable/imgcat" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -83,7 +84,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.402"
-            app:srcCompat="@drawable/_ee7713799588c0004aa6848" />
+            app:srcCompat="@drawable/imgnop" />
 
         <ImageView
             android:id="@+id/imageView8"
@@ -95,7 +96,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.336"
-            app:srcCompat="@drawable/pngaaa_com_2029594" />
+            app:srcCompat="@drawable/imgmonstre" />
 
         <TextView
             android:id="@+id/pts2"

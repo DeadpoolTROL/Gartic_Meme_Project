@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="212dp"
+        android:gravity="center"
         android:text="Nombre de Joueurs : 5"
         android:textColor="#438C17"
         android:textSize="30sp"
@@ -36,6 +37,7 @@
         android:id="@+id/theme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Thèmes"
         android:textColor="#438C17"
         android:textSize="30sp"
@@ -55,6 +57,7 @@
         android:scaleX="2"
         android:scaleY="2"
         android:max="10"
+        android:min="1"
         android:progress="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,31 +78,20 @@
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
         app:layout_constraintVertical_bias="0.207" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+    <EditText
+        android:id="@+id/EditTheme"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/nbjoueurtext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/theme"
-        app:layout_constraintVertical_bias="0.215">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
         android:background="#3F51B5"
-        android:hint="Entrer un thème"
+        android:hint="Thème :"
+        android:maxLength="12"
+        android:inputType="text"
+        android:maxLines="1"
         app:layout_constraintBottom_toTopOf="@+id/nbjoueurtext"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/theme"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintVertical_bias="0.313" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
