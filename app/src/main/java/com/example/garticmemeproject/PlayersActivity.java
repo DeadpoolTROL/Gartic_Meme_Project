@@ -10,6 +10,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+
+import java.util.Random;
 
 public class PlayersActivity extends AppCompatActivity {
 
@@ -24,6 +27,13 @@ public class PlayersActivity extends AppCompatActivity {
 
         Intent intent2 = getIntent();
         String message2 = intent2.getStringExtra(ParametreActivity.EXTRA_MESSAGE);
+
+        ImageView imgView = (ImageView) findViewById(R.id.logo4);
+        Random rand = new Random();
+        int rndInt = rand.nextInt(10) + 1;
+        String imgName = "profil" + rndInt;
+        int id = getResources().getIdentifier(imgName, "drawable", getPackageName());
+        imgView.setImageResource(id);
 
         Button bouton;
         bouton = (Button) findViewById(R.id.buttonjoueur);
