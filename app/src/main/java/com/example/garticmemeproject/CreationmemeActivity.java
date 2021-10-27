@@ -34,16 +34,25 @@ public class CreationmemeActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(PlayersActivity.EXTRA_MESSAGE2);
-
         TextView textView = findViewById(R.id.themecreate);
         textView.setText("Thème : " + message);
 
-        ImageView imgView = (ImageView) findViewById(R.id.meme);
+//______________________________Image MEME__________________________________________________________________
+
+        ImageView imgMeme = (ImageView) findViewById(R.id.meme);
         Random rand = new Random();
-        int rndInt = rand.nextInt(6) + 1;
-        String imgName = "meme" + rndInt;
+        int randmeme = rand.nextInt(6) + 1;
+        String imgName = "meme" + randmeme;
         int id = getResources().getIdentifier(imgName, "drawable", getPackageName());
-        imgView.setImageResource(id);
+        imgMeme.setImageResource(id);
+
+//______________________________Image Profil__________________________________________________________________
+
+        int randprofil = intent.getIntExtra(PlayersActivity.EXTRA_PROFIL,0);
+        ImageView imgProfil = (ImageView) findViewById(R.id.imagejoueurx);
+        String imgPP = "profil" + randprofil;
+        int id2 = getResources().getIdentifier(imgPP, "drawable", getPackageName());
+        imgProfil.setImageResource(id2);
 
 //---------------------------------------Bouton---------------------------------------------------------------------------
 

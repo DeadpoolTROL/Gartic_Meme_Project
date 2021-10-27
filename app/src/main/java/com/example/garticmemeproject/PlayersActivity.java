@@ -17,6 +17,7 @@ import java.util.Random;
 public class PlayersActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE2 = "";
+    public static final String EXTRA_PROFIL = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,8 @@ public class PlayersActivity extends AppCompatActivity {
 
         ImageView imgView = (ImageView) findViewById(R.id.logo4);
         Random rand = new Random();
-        int rndInt = rand.nextInt(10) + 1;
-        String imgName = "profil" + rndInt;
+        int randprofil = rand.nextInt(10) + 1;
+        String imgName = "profil" + randprofil;
         int id = getResources().getIdentifier(imgName, "drawable", getPackageName());
         imgView.setImageResource(id);
 
@@ -45,6 +46,7 @@ public class PlayersActivity extends AppCompatActivity {
                         CreationmemeActivity.class
                 );
                 intent.putExtra(EXTRA_MESSAGE2, message2);
+                intent.putExtra(EXTRA_PROFIL, randprofil);
                 startActivity(intent);
             }
         });
