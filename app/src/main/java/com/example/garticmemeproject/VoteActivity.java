@@ -9,6 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class VoteActivity extends AppCompatActivity {
@@ -31,6 +32,16 @@ public class VoteActivity extends AppCompatActivity {
         textView.setText("Thème : " + message);
 
         value=(TextView)findViewById(R.id.voteresult);
+
+//______________________________Image MEME__________________________________________________________________
+
+        int randmeme = intent.getIntExtra(CreationmemeActivity.EXTRA_MEME,0);
+        ImageView imgMeme = (ImageView) findViewById(R.id.Meme);
+        String imgMM = "meme" + randmeme;
+        int id2 = getResources().getIdentifier(imgMM, "drawable", getPackageName());
+        imgMeme.setImageResource(id2);
+
+//---------------------------------------Bouton---------------------------------------------------------------------------
 
         Button bouton;
         bouton = (Button) findViewById(R.id.buttonvote);

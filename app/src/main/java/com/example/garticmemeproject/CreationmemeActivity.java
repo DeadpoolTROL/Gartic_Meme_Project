@@ -24,6 +24,7 @@ public class CreationmemeActivity extends AppCompatActivity {
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliseconds = 90000; //1 min 30
     public static final String EXTRA_MESSAGE3 = "";
+    public static final String EXTRA_MEME = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +67,7 @@ public class CreationmemeActivity extends AppCompatActivity {
                         VoteActivity.class
                 );
                 intent.putExtra(EXTRA_MESSAGE3, message);
+                intent.putExtra(EXTRA_MEME, randmeme);
                 startActivity(intent);
             }
         });
