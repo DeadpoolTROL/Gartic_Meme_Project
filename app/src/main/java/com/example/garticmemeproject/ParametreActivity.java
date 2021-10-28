@@ -14,9 +14,11 @@ import android.widget.TextView;
 
 public class ParametreActivity extends AppCompatActivity {
 
+    private int nbjoueur = 1;
     private SeekBar seekbar;
     private TextView Nbjoueurs;
     public static final String EXTRA_MESSAGE = "";
+    public static final String EXTRA_JOUEUR = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,9 +57,11 @@ public class ParametreActivity extends AppCompatActivity {
                         ParametreActivity.this,
                         PlayersActivity.class
                 );
+                nbjoueur = seekbar.getProgress();
                 EditText editText = (EditText) findViewById(R.id.EditTheme);
-                String message = editText.getText().toString();
-                intent.putExtra(EXTRA_MESSAGE, message);
+                String theme = editText.getText().toString();
+                intent.putExtra(EXTRA_MESSAGE, theme);
+                intent.putExtra(EXTRA_JOUEUR, nbjoueur);
                 startActivity(intent);
             }
         });

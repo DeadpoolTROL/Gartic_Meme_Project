@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -18,6 +19,7 @@ public class PlayersActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE2 = "";
     public static final String EXTRA_PROFIL = "";
+    public static final String EXTRA_JOUEUR = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +28,11 @@ public class PlayersActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_players);
 
+        Bundle bundle = getIntent().getExtras();
         Intent intent2 = getIntent();
         String message2 = intent2.getStringExtra(ParametreActivity.EXTRA_MESSAGE);
+
+        int nbj = bundle.getInt(ParametreActivity.EXTRA_JOUEUR,0);
 
         ImageView imgView = (ImageView) findViewById(R.id.logo4);
         Random rand = new Random();
