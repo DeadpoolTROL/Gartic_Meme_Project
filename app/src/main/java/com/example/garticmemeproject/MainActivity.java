@@ -6,6 +6,7 @@ import androidx.core.view.GestureDetectorCompat;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.MotionEvent;
@@ -16,6 +17,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
+    private MediaPlayer mp = null;
 
     ImageView Layout;
 
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
+        mp = MediaPlayer.create(this, R.raw.okay_lets_go);
         Layout = findViewById(R.id.logo1);
         Layout.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                         MainActivity.this,
                         ReglesActivity.class
                 );
+                mp.start();
                 startActivity(intent);
                 return false;
             }
