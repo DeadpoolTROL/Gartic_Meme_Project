@@ -20,7 +20,6 @@ public class PlayersActivity extends AppCompatActivity {
     private int idjoueur;
     public static final String EXTRA_MESSAGE2 = "";
     public static final String EXTRA_PROFIL = "";
-    public static final String EXTRA_JOUEUR = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,17 +32,12 @@ public class PlayersActivity extends AppCompatActivity {
         bouton = (Button) findViewById(R.id.buttonjoueur);
         Bundle bundle = getIntent().getExtras();
         String theme = bundle.getString(ParametreActivity.EXTRA_MESSAGE);
-        int nbjoueur = bundle.getInt(ParametreActivity.EXTRA_JOUEUR,0);
+        idjoueur = bundle.getInt(ParametreActivity.EXTRA_JOUEUR,0);
 
         ImageView imgView = (ImageView) findViewById(R.id.logo4);
         String imgName = "profil" + idjoueur;
         int id = getResources().getIdentifier(imgName, "drawable", getPackageName());
         imgView.setImageResource(id);
-
-        for (idjoueur = 0 ; idjoueur<=nbjoueur ; idjoueur++){
-
-        }
-
 
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override

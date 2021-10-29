@@ -11,6 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -19,12 +20,15 @@ import java.util.Random;
 
 public class CreationmemeActivity extends AppCompatActivity {
 
+    private int progressTime = 0;
     private TextView time;
     private ImageView imageView;
     private CountDownTimer countDownTimer;
-    private long timeLeftInMilliseconds = 90000; //1 min 30
+    private long timeLeftInMilliseconds = 100000; //1 min 40
     public static final String EXTRA_MESSAGE3 = "";
     public static final String EXTRA_MEME = "";
+    private int progress = 100;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +82,6 @@ public class CreationmemeActivity extends AppCompatActivity {
     }
 
 //----------------------------------------Timer--------------------------------------------------------------------------
-
     public void startTimer(){
         countDownTimer = new CountDownTimer(timeLeftInMilliseconds, 1000) {
             @Override
@@ -101,8 +104,10 @@ public class CreationmemeActivity extends AppCompatActivity {
     public void updateTimer(){
         int minute = (int) timeLeftInMilliseconds / 60000;
         int seconde = (int) timeLeftInMilliseconds % 60000 / 1000;
+        ProgressBar progressBar = (ProgressBar)findViewById(R.id.progress_bar);
 
         String timeleftText;
+
 
         timeleftText = "" + minute;
         timeleftText += ":";
@@ -110,6 +115,9 @@ public class CreationmemeActivity extends AppCompatActivity {
         timeleftText += seconde;
 
         time.setText(timeleftText);
+        progress = progress - 1;
+        progressBar.setProgress(progress); // Default 0.
+
     }
 
 }
