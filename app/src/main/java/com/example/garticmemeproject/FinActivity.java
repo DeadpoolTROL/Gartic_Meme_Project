@@ -14,6 +14,7 @@ import android.widget.ImageView;
 public class FinActivity extends AppCompatActivity {
 
     ImageView Layout;
+    ImageView Layout2;
     Button bouton;
 
     @Override
@@ -48,5 +49,17 @@ public class FinActivity extends AppCompatActivity {
             }
         });
 
+        Layout2 = findViewById(R.id.accessecret);
+        Layout2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                Intent intent = new Intent(
+                        FinActivity.this,
+                        EasterEggActivity.class
+                );
+                startActivity(intent);
+                return false;
+            }
+        });
     }
 }
