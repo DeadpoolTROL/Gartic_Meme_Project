@@ -38,9 +38,9 @@ public class CreationmemeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_creationmeme);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(PlayersActivity.EXTRA_MESSAGE2);
+        String theme = getIntent().getStringExtra("THEME");
         TextView textView = findViewById(R.id.themecreate);
-        textView.setText("Thème : " + message);
+        textView.setText("Thème : " + theme);
 
 //______________________________Image MEME__________________________________________________________________
 
@@ -53,7 +53,7 @@ public class CreationmemeActivity extends AppCompatActivity {
 
 //______________________________Image Profil__________________________________________________________________
 
-        int randprofil = intent.getIntExtra(PlayersActivity.EXTRA_PROFIL,0);
+        int randprofil = getIntent().getIntExtra("NBJOUEUR",0);
         ImageView imgProfil = (ImageView) findViewById(R.id.imagejoueurx);
         String imgPP = "profil" + randprofil;
         int id2 = getResources().getIdentifier(imgPP, "drawable", getPackageName());
@@ -70,8 +70,7 @@ public class CreationmemeActivity extends AppCompatActivity {
                         CreationmemeActivity.this,
                         VoteActivity.class
                 );
-                intent.putExtra(EXTRA_MESSAGE3, message);
-                intent.putExtra(EXTRA_MEME, randmeme);
+                intent.putExtras(getIntent().getExtras());
                 startActivity(intent);
             }
         });
@@ -94,8 +93,9 @@ public class CreationmemeActivity extends AppCompatActivity {
             public void onFinish() {
                 Intent intent = new Intent(
                         CreationmemeActivity.this,
-                        FinActivity.class
+                        VoteActivity.class
                 );
+                intent.putExtras(getIntent().getExtras());
                 startActivity(intent);
             }
         }.start();

@@ -84,14 +84,14 @@
         android:layout_height="50dp"
         android:background="#3F51B5"
         android:hint="Thème :"
-        android:maxLength="12"
         android:inputType="text"
+        android:maxLength="12"
         android:maxLines="1"
         app:layout_constraintBottom_toTopOf="@+id/nbjoueurtext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/theme"
-        app:layout_constraintVertical_bias="0.313" />
+        app:layout_constraintVertical_bias="0.328" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

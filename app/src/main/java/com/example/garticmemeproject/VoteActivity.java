@@ -16,7 +16,6 @@ public class VoteActivity extends AppCompatActivity {
 
     TextView value;
     int count = 0;
-    public static final String EXTRA_MESSAGE = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +24,14 @@ public class VoteActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_vote);
 
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(PlayersActivity.EXTRA_MESSAGE2);
-
+        String theme = getIntent().getStringExtra("THEME");
         TextView textView = findViewById(R.id.themevote);
-        textView.setText("Thème : " + message);
-
+        textView.setText("Thème : " + theme);
         value=(TextView)findViewById(R.id.voteresult);
 
 //______________________________Image MEME__________________________________________________________________
 
-        int randmeme = intent.getIntExtra(CreationmemeActivity.EXTRA_MEME,0);
+        int randmeme = getIntent().getIntExtra("MEME",1);
         ImageView imgMeme = (ImageView) findViewById(R.id.Meme);
         String imgMM = "meme" + randmeme;
         int id2 = getResources().getIdentifier(imgMM, "drawable", getPackageName());

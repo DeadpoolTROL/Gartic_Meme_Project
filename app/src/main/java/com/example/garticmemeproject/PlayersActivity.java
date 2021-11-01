@@ -17,10 +17,6 @@ import java.util.Random;
 
 public class PlayersActivity extends AppCompatActivity {
 
-    private int idjoueur;
-    public static final String EXTRA_MESSAGE2 = "";
-    public static final String EXTRA_PROFIL = "";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,9 +26,8 @@ public class PlayersActivity extends AppCompatActivity {
 
         Button bouton;
         bouton = (Button) findViewById(R.id.buttonjoueur);
-        Bundle bundle = getIntent().getExtras();
-        String theme = bundle.getString(ParametreActivity.EXTRA_MESSAGE);
-        idjoueur = bundle.getInt(ParametreActivity.EXTRA_JOUEUR,0);
+        String theme = getIntent().getStringExtra("THEME");
+        int idjoueur = getIntent().getIntExtra("NBJOUEUR",0);
 
         ImageView imgView = (ImageView) findViewById(R.id.logo4);
         String imgName = "profil" + idjoueur;
@@ -46,8 +41,7 @@ public class PlayersActivity extends AppCompatActivity {
                         PlayersActivity.this,
                         CreationmemeActivity.class
                 );
-                intent.putExtra(EXTRA_MESSAGE2, theme);
-                intent.putExtra(EXTRA_PROFIL, idjoueur);
+                intent.putExtras(getIntent().getExtras());
                 startActivity(intent);
             }
         });
