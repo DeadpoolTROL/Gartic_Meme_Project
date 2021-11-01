@@ -18,11 +18,11 @@
         app:srcCompat="@drawable/pngegg" />
 
     <EditText
-        android:id="@+id/EditTheme"
+        android:id="@+id/EditNom"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="#3F51B5"
-        android:hint="Nom du joueur :"
+        android:hint="Nom :"
         android:inputType="text"
         android:maxLength="20"
         android:maxLines="1"

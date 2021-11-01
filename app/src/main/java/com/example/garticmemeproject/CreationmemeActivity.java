@@ -20,6 +20,10 @@ import java.util.Random;
 
 public class CreationmemeActivity extends AppCompatActivity {
 
+    private int idprofil;
+    private String theme;
+    public int randmeme = Hazard();
+    public Bundle data2 = new Bundle();
     private int progressTime = 0;
     private TextView time;
     private ImageView imageView;
@@ -37,7 +41,6 @@ public class CreationmemeActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_creationmeme);
 
-        Intent intent = getIntent();
         String theme = getIntent().getStringExtra("THEME");
         TextView textView = findViewById(R.id.themecreate);
         textView.setText("Thème : " + theme);
@@ -45,17 +48,15 @@ public class CreationmemeActivity extends AppCompatActivity {
 //______________________________Image MEME__________________________________________________________________
 
         ImageView imgMeme = (ImageView) findViewById(R.id.meme);
-        Random rand = new Random();
-        int randmeme = rand.nextInt(6) + 1;
         String imgName = "meme" + randmeme;
         int id = getResources().getIdentifier(imgName, "drawable", getPackageName());
         imgMeme.setImageResource(id);
 
 //______________________________Image Profil__________________________________________________________________
 
-        int randprofil = getIntent().getIntExtra("NBJOUEUR",0);
         ImageView imgProfil = (ImageView) findViewById(R.id.imagejoueurx);
-        String imgPP = "profil" + randprofil;
+        int idprofil = getIntent().getIntExtra("NBJOUEUR",0);
+        String imgPP = "profil" + idprofil;
         int id2 = getResources().getIdentifier(imgPP, "drawable", getPackageName());
         imgProfil.setImageResource(id2);
 
@@ -70,7 +71,10 @@ public class CreationmemeActivity extends AppCompatActivity {
                         CreationmemeActivity.this,
                         VoteActivity.class
                 );
-                intent.putExtras(getIntent().getExtras());
+                data2.putString("THEME", theme);
+                data2.putInt("NBJOUEUR", idprofil);
+                data2.putInt("MEME",randmeme);
+                intent.putExtras(data2);
                 startActivity(intent);
             }
         });
@@ -95,7 +99,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         CreationmemeActivity.this,
                         VoteActivity.class
                 );
-                intent.putExtras(getIntent().getExtras());
+                idprofil = getIntent().getIntExtra("NBJOUEUR",0);
+                theme = getIntent().getStringExtra("THEME");
+                data2.putString("THEME", theme);
+                data2.putInt("NBJOUEUR", idprofil);
+                data2.putInt("MEME",randmeme);
+                intent.putExtras(data2);
                 startActivity(intent);
             }
         }.start();
@@ -120,4 +129,9 @@ public class CreationmemeActivity extends AppCompatActivity {
 
     }
 
+    public int Hazard(){
+        Random rand = new Random();
+        int hazardnumber = rand.nextInt(6) + 1;
+        return (hazardnumber);
+    }
 }
