@@ -17,6 +17,8 @@ import java.util.Random;
 
 public class PlayersActivity extends AppCompatActivity {
 
+    private Bundle data2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,10 +26,12 @@ public class PlayersActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_players);
 
+        data2 = getIntent().getExtras();
+
         Button bouton;
         bouton = (Button) findViewById(R.id.buttonjoueur);
-        String theme = getIntent().getStringExtra("THEME");
-        int idjoueur = getIntent().getIntExtra("NBJOUEUR",0);
+        String theme = data2.getString("THEME");
+        int idjoueur = data2.getInt("NBJOUEUR");
 
         ImageView imgView = (ImageView) findViewById(R.id.logo4);
         String imgName = "profil" + idjoueur;
@@ -41,7 +45,7 @@ public class PlayersActivity extends AppCompatActivity {
                         PlayersActivity.this,
                         CreationmemeActivity.class
                 );
-                intent.putExtras(getIntent().getExtras());
+                intent.putExtras(data2);
                 startActivity(intent);
             }
         });

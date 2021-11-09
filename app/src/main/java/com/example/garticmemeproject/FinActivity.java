@@ -13,9 +13,10 @@ import android.widget.ImageView;
 
 public class FinActivity extends AppCompatActivity {
 
-    ImageView Layout;
-    ImageView Layout2;
-    Button bouton;
+    private Bundle data4;
+    private ImageView Layout;
+    private ImageView Layout2;
+    private Button bouton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class FinActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_fin);
+
+        data4 = getIntent().getExtras();
 
         bouton = (Button) findViewById(R.id.buttonfin);
         bouton.setOnClickListener(new View.OnClickListener() {

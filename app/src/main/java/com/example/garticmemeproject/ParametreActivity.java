@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class ParametreActivity extends AppCompatActivity {
 
-    public Bundle data = new Bundle();
+    private Bundle data = new Bundle();
     private int nbjoueur = 1;
     private SeekBar seekbar;
     private TextView Nbjoueurs;
