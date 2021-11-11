@@ -18,11 +18,10 @@ import java.util.ArrayList;
 
 public class ResultatTableauActivity extends AppCompatActivity {
 
+    private Bundle data6;
     Button bouton;
     ListView listView;
-    String[] data = {
-            "Player 1","Player 2","Player 3","Player 4","Benjamin le plus beau"
-    };
+    ArrayList listeNom = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +30,14 @@ public class ResultatTableauActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_resultat_tableau);
 
+        data6 = getIntent().getExtras();
+
+        listeNom.add(data6.getString("NOM"));
         listView=(ListView)findViewById(R.id.listView);
         ArrayAdapter adapter = new ArrayAdapter<String>(
             this,
             android.R.layout.simple_list_item_1,
-            data
+            listeNom
         );
         listView.setAdapter(adapter);
 
@@ -47,9 +49,9 @@ public class ResultatTableauActivity extends AppCompatActivity {
                         ResultatTableauActivity.this,
                         FinActivity.class
                 );
+                intent.putExtras(data6);
                 startActivity(intent);
             }
         });
-
     }
 }

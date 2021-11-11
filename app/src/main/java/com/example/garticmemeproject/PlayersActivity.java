@@ -45,6 +45,10 @@ public class PlayersActivity extends AppCompatActivity {
                         PlayersActivity.this,
                         CreationmemeActivity.class
                 );
+                EditText editText = (EditText) findViewById(R.id.EditNom);
+                String nom = editText.getText().toString();
+
+                data2.putString("NOM", nom);
                 intent.putExtras(data2);
                 startActivity(intent);
             }

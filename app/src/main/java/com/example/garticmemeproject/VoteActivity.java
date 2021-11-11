@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 public class VoteActivity extends AppCompatActivity {
 
+    private Bundle data4;
     TextView value;
     int count = 0;
 
@@ -23,6 +24,8 @@ public class VoteActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_vote);
+
+        data4 = getIntent().getExtras();
 
         String theme = getIntent().getStringExtra("THEME");
         TextView textView = findViewById(R.id.themevote);
@@ -48,6 +51,7 @@ public class VoteActivity extends AppCompatActivity {
                         VoteActivity.this,
                         FinActivity.class
                 );
+                intent.putExtras(data4);
                 startActivity(intent);
             }
         });

@@ -13,7 +13,7 @@ import android.widget.ImageView;
 
 public class FinActivity extends AppCompatActivity {
 
-    private Bundle data4;
+    private Bundle data5;
     private ImageView Layout;
     private ImageView Layout2;
     private Button bouton;
@@ -25,7 +25,7 @@ public class FinActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_fin);
 
-        data4 = getIntent().getExtras();
+        data5 = getIntent().getExtras();
 
         bouton = (Button) findViewById(R.id.buttonfin);
         bouton.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +47,7 @@ public class FinActivity extends AppCompatActivity {
                         FinActivity.this,
                         ResultatTableauActivity.class
                 );
+                intent.putExtras(data5);
                 startActivity(intent);
                 return false;
             }

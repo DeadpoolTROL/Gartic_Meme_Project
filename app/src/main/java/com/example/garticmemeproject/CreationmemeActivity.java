@@ -78,6 +78,7 @@ public class CreationmemeActivity extends AppCompatActivity {
                 if (countDownTimer != null){
                     countDownTimer.cancel();
                 }
+                intent.putExtras(data3);
                 startActivity(intent);
             }
         });
