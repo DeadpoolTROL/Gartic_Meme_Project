@@ -58,7 +58,8 @@ public class VoteActivity extends AppCompatActivity {
     }
 
     public void increment(View v){
-        if (count >= 10) count = 10;
+        int nbJoueur = data4.getInt("NBJOUEUR");
+        if (count >= nbJoueur) count = nbJoueur;
         else count++;
         value.setText("" + count);
     }
