@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GarticMEMEProject">
         <activity
+            android:name=".LocalGameActivity"
+            android:exported="false" />
+        <activity
             android:name=".EasterEggActivity"
             android:exported="false" />
         <activity
