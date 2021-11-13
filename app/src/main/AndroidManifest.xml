@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GarticMEMEProject">
         <activity
+            android:name=".JeanProfiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PooltatoActivity"
+            android:exported="false" />
+        <activity
             android:name=".EasterEggActivity"
             android:exported="false" />
         <activity

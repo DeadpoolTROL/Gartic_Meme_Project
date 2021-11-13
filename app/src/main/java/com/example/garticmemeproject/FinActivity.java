@@ -61,6 +61,7 @@ public class FinActivity extends AppCompatActivity {
                         FinActivity.this,
                         EasterEggActivity.class
                 );
+                //intent.putExtras(data5);
                 startActivity(intent);
                 return false;
             }
