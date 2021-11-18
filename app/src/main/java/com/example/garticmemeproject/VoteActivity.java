@@ -21,11 +21,12 @@ public class VoteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_vote);
 
         data4 = getIntent().getExtras();
+        int randmeme = getIntent().getIntExtra("MEME",1);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_vote+randmeme);
 
         String theme = getIntent().getStringExtra("THEME");
         TextView textView = findViewById(R.id.themevote);
@@ -34,11 +35,28 @@ public class VoteActivity extends AppCompatActivity {
 
 //______________________________Image MEME__________________________________________________________________
 
-        int randmeme = getIntent().getIntExtra("MEME",1);
-        ImageView imgMeme = (ImageView) findViewById(R.id.Meme);
-        String imgMM = "meme" + randmeme;
-        int id2 = getResources().getIdentifier(imgMM, "drawable", getPackageName());
-        imgMeme.setImageResource(id2);
+        //int randmeme = getIntent().getIntExtra("MEME",1);
+        //ImageView imgMeme = (ImageView) findViewById(R.id.Meme);
+        //String imgMM = "meme" + randmeme;
+        //int id2 = getResources().getIdentifier(imgMM, "drawable", getPackageName());
+        //imgMeme.setImageResource(id2);
+
+        String ecriture1 = data4.getString("ECRITURE1");
+        TextView textView1 = findViewById(R.id.ecriture1);
+        textView1.setText(ecriture1);
+        if (randmeme==1 || randmeme==3 || randmeme==5){
+            String ecriture2 = data4.getString("ECRITURE2");
+            TextView textView2 = findViewById(R.id.ecriture2);
+            textView2.setText(ecriture2);
+        }
+        if (randmeme==4 || randmeme==6){
+            String ecriture2 = data4.getString("ECRITURE2");
+            TextView textView2 = findViewById(R.id.ecriture2);
+            textView2.setText(ecriture2);
+            String ecriture3 = data4.getString("ECRITURE3");
+            TextView textView3 = findViewById(R.id.ecriture3);
+            textView3.setText(ecriture3);
+        }
 
 //---------------------------------------Bouton---------------------------------------------------------------------------
 
