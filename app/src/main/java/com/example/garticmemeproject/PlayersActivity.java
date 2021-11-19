@@ -18,6 +18,7 @@ import java.util.Random;
 public class PlayersActivity extends AppCompatActivity {
 
     private Bundle data2;
+    private int idjoueur;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +29,11 @@ public class PlayersActivity extends AppCompatActivity {
 
         data2 = getIntent().getExtras();
 
+        int idjoueur = data2.getInt("IDJOUEUR") + 1;
+
         Button bouton;
         bouton = (Button) findViewById(R.id.buttonjoueur);
         String theme = data2.getString("THEME");
-        int idjoueur = data2.getInt("NBJOUEUR");
 
         ImageView imgView = (ImageView) findViewById(R.id.logo4);
         String imgName = "profil" + idjoueur;
@@ -48,7 +50,8 @@ public class PlayersActivity extends AppCompatActivity {
                 EditText editText = (EditText) findViewById(R.id.EditNom);
                 String nom = editText.getText().toString();
 
-                data2.putString("NOM", nom);
+                data2.putInt("IDJOUEUR",idjoueur);
+                data2.putString("NOM"+idjoueur, nom);
                 intent.putExtras(data2);
                 startActivity(intent);
             }

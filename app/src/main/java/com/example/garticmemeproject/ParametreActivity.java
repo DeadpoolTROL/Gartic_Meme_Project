@@ -20,6 +20,8 @@ public class ParametreActivity extends AppCompatActivity {
     private int nbjoueur = 1;
     private SeekBar seekbar;
     private TextView Nbjoueurs;
+    private int idjoueur = 0;
+    private int idjoueur2 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +65,8 @@ public class ParametreActivity extends AppCompatActivity {
                 String theme = editText.getText().toString();
 
                 data.putString("THEME", theme);
+                data.putInt("IDJOUEUR", idjoueur);
+                data.putInt("IDJOUEUR2", idjoueur2);
                 data.putInt("NBJOUEUR", nbjoueur);
                 intent.putExtras(data);
                 startActivity(intent);

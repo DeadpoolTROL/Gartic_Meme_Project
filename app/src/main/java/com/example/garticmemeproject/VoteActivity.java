@@ -16,6 +16,7 @@ public class VoteActivity extends AppCompatActivity {
 
     private Bundle data4;
     TextView value;
+    private int idjoueur2;
     int count = 0;
 
     @Override
@@ -57,6 +58,10 @@ public class VoteActivity extends AppCompatActivity {
             TextView textView3 = findViewById(R.id.ecriture3);
             textView3.setText(ecriture3);
         }
+//---------------------------------------ID joueur---------------------------------------------------------------------------
+
+        int nbjoueur = data4.getInt("NBJOUEUR");
+        int idjoueur2 = data4.getInt("IDJOUEUR2") + 1;
 
 //---------------------------------------Bouton---------------------------------------------------------------------------
 
@@ -65,12 +70,23 @@ public class VoteActivity extends AppCompatActivity {
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(
-                        VoteActivity.this,
-                        FinActivity.class
-                );
-                intent.putExtras(data4);
-                startActivity(intent);
+                if (idjoueur2 < nbjoueur){
+                    Intent intent = new Intent(
+                            VoteActivity.this,
+                            VoteActivity.class
+                    );
+                    data4.putInt("IDJOUEUR2",idjoueur2);
+                    intent.putExtras(data4);
+                    startActivity(intent);
+                }
+                else if (idjoueur2 >= nbjoueur){
+                    Intent intent = new Intent(
+                            VoteActivity.this,
+                            FinActivity.class
+                    );
+                    intent.putExtras(data4);
+                    startActivity(intent);
+                }
             }
         });
     }

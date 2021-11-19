@@ -22,6 +22,7 @@ public class ResultatTableauActivity extends AppCompatActivity {
     Button bouton;
     ListView listView;
     ArrayList listeNom = new ArrayList();
+    private int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,10 @@ public class ResultatTableauActivity extends AppCompatActivity {
 
         data6 = getIntent().getExtras();
 
-        listeNom.add(data6.getString("NOM"));
+        int nbjoueur = data6.getInt("NBJOUEUR");
+        for (i=1; i<=nbjoueur; i++){
+            listeNom.add(data6.getString("NOM"+i));
+        }
         listView=(ListView)findViewById(R.id.listView);
         ArrayAdapter adapter = new ArrayAdapter<String>(
             this,
