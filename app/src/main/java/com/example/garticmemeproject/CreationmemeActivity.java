@@ -27,7 +27,7 @@ public class CreationmemeActivity extends AppCompatActivity {
     private TextView time;
     private ImageView imageView;
     private CountDownTimer countDownTimer;
-    private long timeLeftInMilliseconds = 5000; //1 min 40      100000
+    private long timeLeftInMilliseconds = 100000; //1 min 40      100000
     public static final String EXTRA_MESSAGE3 = "";
     public static final String EXTRA_MEME = "";
     private int progress = 100;
@@ -64,6 +64,10 @@ public class CreationmemeActivity extends AppCompatActivity {
         int id2 = getResources().getIdentifier(imgPP, "drawable", getPackageName());
         imgProfil.setImageResource(id2);
 
+//______________________________Bundle--------------------------------------------------------
+
+
+
 //---------------------------------------Bouton---------------------------------------------------------------------------
 
         Button bouton;
@@ -76,28 +80,221 @@ public class CreationmemeActivity extends AppCompatActivity {
                             CreationmemeActivity.this,
                             PlayersActivity.class
                     );
-                    data3.putInt("MEME",randmeme);
                     data3.putInt("IDJOUEUR",idjoueur);
-                    intent.putExtras(data3);
+
                     if (countDownTimer != null){
                         countDownTimer.cancel();
                     }
 
-                    EditText editText1 = (EditText) findViewById(R.id.ecriture1);
-                    String ecriture1 = editText1.getText().toString();
-                    data3.putString("ECRITURE1", ecriture1);
-                    if (randmeme==1 || randmeme==3 || randmeme==5){
-                        EditText editText2 = (EditText) findViewById(R.id.ecriture2);
-                        String ecriture2 = editText2.getText().toString();
-                        data3.putString("ECRITURE2", ecriture2);
+                    if (idjoueur == 1){
+                        Bundle Joueur1 = new Bundle();
+                        Joueur1.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur1.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur1.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur1.putString("ECRITURE2", ecriture2);
+                            Joueur1.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR1",Joueur1);
                     }
-                    if (randmeme==4 || randmeme==6){
-                        EditText editText2 = (EditText) findViewById(R.id.ecriture2);
-                        String ecriture2 = editText2.getText().toString();
-                        EditText editText3 = (EditText) findViewById(R.id.ecriture3);
-                        String ecriture3 = editText3.getText().toString();
-                        data3.putString("ECRITURE2", ecriture2);
-                        data3.putString("ECRITURE3", ecriture3);
+                    if (idjoueur == 2){
+                        Bundle Joueur2 = new Bundle();
+                        Joueur2.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur2.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur2.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur2.putString("ECRITURE2", ecriture2);
+                            Joueur2.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR2",Joueur2);
+                    }
+                    if (idjoueur == 3){
+                        Bundle Joueur3 = new Bundle();
+                        Joueur3.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur3.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur3.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur3.putString("ECRITURE2", ecriture2);
+                            Joueur3.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR3",Joueur3);
+                    }
+                    if (idjoueur == 4){
+                        Bundle Joueur4 = new Bundle();
+                        Joueur4.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur4.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur4.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur4.putString("ECRITURE2", ecriture2);
+                            Joueur4.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR4",Joueur4);
+                    }
+                    if (idjoueur == 5){
+                        Bundle Joueur5 = new Bundle();
+                        Joueur5.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur5.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur5.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur5.putString("ECRITURE2", ecriture2);
+                            Joueur5.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR5",Joueur5);
+                    }
+                    if (idjoueur == 6){
+                        Bundle Joueur6 = new Bundle();
+                        Joueur6.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur6.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur6.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur6.putString("ECRITURE2", ecriture2);
+                            Joueur6.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR6",Joueur6);
+                    }
+                    if (idjoueur == 7){
+                        Bundle Joueur7 = new Bundle();
+                        Joueur7.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur7.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur7.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur7.putString("ECRITURE2", ecriture2);
+                            Joueur7.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR7",Joueur7);
+                    }
+                    if (idjoueur == 8){
+                        Bundle Joueur8 = new Bundle();
+                        Joueur8.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur8.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur8.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur8.putString("ECRITURE2", ecriture2);
+                            Joueur8.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR8",Joueur8);
+                    }
+                    if (idjoueur == 9){
+                        Bundle Joueur9 = new Bundle();
+                        Joueur9.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur9.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur9.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur9.putString("ECRITURE2", ecriture2);
+                            Joueur9.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR9",Joueur9);
+                    }
+                    if (idjoueur == 10){
+                        Bundle Joueur10 = new Bundle();
+                        Joueur10.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur10.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur10.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur10.putString("ECRITURE2", ecriture2);
+                            Joueur10.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR10",Joueur10);
                     }
                     intent.putExtras(data3);
                     startActivity(intent);
@@ -107,28 +304,221 @@ public class CreationmemeActivity extends AppCompatActivity {
                             CreationmemeActivity.this,
                             VoteActivity.class
                     );
-                    data3.putInt("MEME",randmeme);
                     data3.putInt("IDJOUEUR",idjoueur);
-                    intent.putExtras(data3);
+
                     if (countDownTimer != null){
                         countDownTimer.cancel();
                     }
 
-                    EditText editText1 = (EditText) findViewById(R.id.ecriture1);
-                    String ecriture1 = editText1.getText().toString();
-                    data3.putString("ECRITURE1", ecriture1);
-                    if (randmeme==1 || randmeme==3 || randmeme==5){
-                        EditText editText2 = (EditText) findViewById(R.id.ecriture2);
-                        String ecriture2 = editText2.getText().toString();
-                        data3.putString("ECRITURE2", ecriture2);
+                    if (idjoueur == 1){
+                        Bundle Joueur1 = new Bundle();
+                        Joueur1.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur1.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur1.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur1.putString("ECRITURE2", ecriture2);
+                            Joueur1.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR1",Joueur1);
                     }
-                    if (randmeme==4 || randmeme==6){
-                        EditText editText2 = (EditText) findViewById(R.id.ecriture2);
-                        String ecriture2 = editText2.getText().toString();
-                        EditText editText3 = (EditText) findViewById(R.id.ecriture3);
-                        String ecriture3 = editText3.getText().toString();
-                        data3.putString("ECRITURE2", ecriture2);
-                        data3.putString("ECRITURE3", ecriture3);
+                    if (idjoueur == 2){
+                        Bundle Joueur2 = new Bundle();
+                        Joueur2.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur2.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur2.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur2.putString("ECRITURE2", ecriture2);
+                            Joueur2.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR2",Joueur2);
+                    }
+                    if (idjoueur == 3){
+                        Bundle Joueur3 = new Bundle();
+                        Joueur3.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur3.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur3.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur3.putString("ECRITURE2", ecriture2);
+                            Joueur3.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR3",Joueur3);
+                    }
+                    if (idjoueur == 4){
+                        Bundle Joueur4 = new Bundle();
+                        Joueur4.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur4.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur4.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur4.putString("ECRITURE2", ecriture2);
+                            Joueur4.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR4",Joueur4);
+                    }
+                    if (idjoueur == 5){
+                        Bundle Joueur5 = new Bundle();
+                        Joueur5.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur5.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur5.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur5.putString("ECRITURE2", ecriture2);
+                            Joueur5.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR5",Joueur5);
+                    }
+                    if (idjoueur == 6){
+                        Bundle Joueur6 = new Bundle();
+                        Joueur6.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur6.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur6.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur6.putString("ECRITURE2", ecriture2);
+                            Joueur6.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR6",Joueur6);
+                    }
+                    if (idjoueur == 7){
+                        Bundle Joueur7 = new Bundle();
+                        Joueur7.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur7.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur7.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur7.putString("ECRITURE2", ecriture2);
+                            Joueur7.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR7",Joueur7);
+                    }
+                    if (idjoueur == 8){
+                        Bundle Joueur8 = new Bundle();
+                        Joueur8.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur8.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur8.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur8.putString("ECRITURE2", ecriture2);
+                            Joueur8.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR8",Joueur8);
+                    }
+                    if (idjoueur == 9){
+                        Bundle Joueur9 = new Bundle();
+                        Joueur9.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur9.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur9.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur9.putString("ECRITURE2", ecriture2);
+                            Joueur9.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR9",Joueur9);
+                    }
+                    if (idjoueur == 10){
+                        Bundle Joueur10 = new Bundle();
+                        Joueur10.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur10.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur10.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur10.putString("ECRITURE2", ecriture2);
+                            Joueur10.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR10",Joueur10);
                     }
                     intent.putExtras(data3);
                     startActivity(intent);
@@ -153,30 +543,224 @@ public class CreationmemeActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
+                int nbjoueur = data3.getInt("NBJOUEUR");
                 int idjoueur = data3.getInt("IDJOUEUR");
                 if (idjoueur < nbjoueur){
                     Intent intent = new Intent(
                             CreationmemeActivity.this,
                             PlayersActivity.class
                     );
-                    EditText editText1 = (EditText) findViewById(R.id.ecriture1);
-                    String ecriture1 = editText1.getText().toString();
-                    data3.putString("ECRITURE1", ecriture1);
-                    if (randmeme==1 || randmeme==3 || randmeme==5){
-                        EditText editText2 = (EditText) findViewById(R.id.ecriture2);
-                        String ecriture2 = editText2.getText().toString();
-                        data3.putString("ECRITURE2", ecriture2);
+                    if (idjoueur == 1){
+                        Bundle Joueur1 = new Bundle();
+                        Joueur1.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur1.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur1.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur1.putString("ECRITURE2", ecriture2);
+                            Joueur1.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR1",Joueur1);
                     }
-                    if (randmeme==4 || randmeme==6){
-                        EditText editText2 = (EditText) findViewById(R.id.ecriture2);
-                        String ecriture2 = editText2.getText().toString();
-                        EditText editText3 = (EditText) findViewById(R.id.ecriture3);
-                        String ecriture3 = editText3.getText().toString();
-                        data3.putString("ECRITURE2", ecriture2);
-                        data3.putString("ECRITURE3", ecriture3);
+                    if (idjoueur == 2){
+                        Bundle Joueur2 = new Bundle();
+                        Joueur2.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur2.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur2.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur2.putString("ECRITURE2", ecriture2);
+                            Joueur2.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR2",Joueur2);
+                    }
+                    if (idjoueur == 3){
+                        Bundle Joueur3 = new Bundle();
+                        Joueur3.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur3.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur3.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur3.putString("ECRITURE2", ecriture2);
+                            Joueur3.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR3",Joueur3);
+                    }
+                    if (idjoueur == 4){
+                        Bundle Joueur4 = new Bundle();
+                        Joueur4.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur4.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur4.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur4.putString("ECRITURE2", ecriture2);
+                            Joueur4.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR4",Joueur4);
+                    }
+                    if (idjoueur == 5){
+                        Bundle Joueur5 = new Bundle();
+                        Joueur5.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur5.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur5.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur5.putString("ECRITURE2", ecriture2);
+                            Joueur5.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR5",Joueur5);
+                    }
+                    if (idjoueur == 6){
+                        Bundle Joueur6 = new Bundle();
+                        Joueur6.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur6.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur6.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur6.putString("ECRITURE2", ecriture2);
+                            Joueur6.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR6",Joueur6);
+                    }
+                    if (idjoueur == 7){
+                        Bundle Joueur7 = new Bundle();
+                        Joueur7.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur7.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur7.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur7.putString("ECRITURE2", ecriture2);
+                            Joueur7.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR7",Joueur7);
+                    }
+                    if (idjoueur == 8){
+                        Bundle Joueur8 = new Bundle();
+                        Joueur8.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur8.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur8.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur8.putString("ECRITURE2", ecriture2);
+                            Joueur8.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR8",Joueur8);
+                    }
+                    if (idjoueur == 9){
+                        Bundle Joueur9 = new Bundle();
+                        Joueur9.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur9.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur9.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur9.putString("ECRITURE2", ecriture2);
+                            Joueur9.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR9",Joueur9);
+                    }
+                    if (idjoueur == 10){
+                        Bundle Joueur10 = new Bundle();
+                        Joueur10.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur10.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur10.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur10.putString("ECRITURE2", ecriture2);
+                            Joueur10.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR10",Joueur10);
                     }
                     data3.putInt("IDJOUEUR",idjoueur);
-                    data3.putInt("MEME",randmeme);
                     intent.putExtras(data3);
                     startActivity(intent);
                 }
@@ -185,24 +769,217 @@ public class CreationmemeActivity extends AppCompatActivity {
                             CreationmemeActivity.this,
                             VoteActivity.class
                     );
-                    EditText editText1 = (EditText) findViewById(R.id.ecriture1);
-                    String ecriture1 = editText1.getText().toString();
-                    data3.putString("ECRITURE1", ecriture1);
-                    if (randmeme==1 || randmeme==3 || randmeme==5){
-                        EditText editText2 = (EditText) findViewById(R.id.ecriture2);
-                        String ecriture2 = editText2.getText().toString();
-                        data3.putString("ECRITURE2", ecriture2);
+                    if (idjoueur == 1){
+                        Bundle Joueur1 = new Bundle();
+                        Joueur1.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur1.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur1.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur1.putString("ECRITURE2", ecriture2);
+                            Joueur1.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR1",Joueur1);
                     }
-                    if (randmeme==4 || randmeme==6){
-                        EditText editText2 = (EditText) findViewById(R.id.ecriture2);
-                        String ecriture2 = editText2.getText().toString();
-                        EditText editText3 = (EditText) findViewById(R.id.ecriture3);
-                        String ecriture3 = editText3.getText().toString();
-                        data3.putString("ECRITURE2", ecriture2);
-                        data3.putString("ECRITURE3", ecriture3);
+                    if (idjoueur == 2){
+                        Bundle Joueur2 = new Bundle();
+                        Joueur2.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur2.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur2.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur2.putString("ECRITURE2", ecriture2);
+                            Joueur2.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR2",Joueur2);
+                    }
+                    if (idjoueur == 3){
+                        Bundle Joueur3 = new Bundle();
+                        Joueur3.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur3.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur3.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur3.putString("ECRITURE2", ecriture2);
+                            Joueur3.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR3",Joueur3);
+                    }
+                    if (idjoueur == 4){
+                        Bundle Joueur4 = new Bundle();
+                        Joueur4.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur4.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur4.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur4.putString("ECRITURE2", ecriture2);
+                            Joueur4.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR4",Joueur4);
+                    }
+                    if (idjoueur == 5){
+                        Bundle Joueur5 = new Bundle();
+                        Joueur5.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur5.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur5.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur5.putString("ECRITURE2", ecriture2);
+                            Joueur5.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR5",Joueur5);
+                    }
+                    if (idjoueur == 6){
+                        Bundle Joueur6 = new Bundle();
+                        Joueur6.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur6.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur6.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur6.putString("ECRITURE2", ecriture2);
+                            Joueur6.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR6",Joueur6);
+                    }
+                    if (idjoueur == 7){
+                        Bundle Joueur7 = new Bundle();
+                        Joueur7.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur7.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur7.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur7.putString("ECRITURE2", ecriture2);
+                            Joueur7.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR7",Joueur7);
+                    }
+                    if (idjoueur == 8){
+                        Bundle Joueur8 = new Bundle();
+                        Joueur8.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur8.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur8.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur8.putString("ECRITURE2", ecriture2);
+                            Joueur8.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR8",Joueur8);
+                    }
+                    if (idjoueur == 9){
+                        Bundle Joueur9 = new Bundle();
+                        Joueur9.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur9.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur9.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur9.putString("ECRITURE2", ecriture2);
+                            Joueur9.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR9",Joueur9);
+                    }
+                    if (idjoueur == 10){
+                        Bundle Joueur10 = new Bundle();
+                        Joueur10.putInt("MEME",randmeme);
+                        EditText editText1 = (EditText) findViewById(R.id.ecriture1);
+                        String ecriture1 = editText1.getText().toString();
+                        Joueur10.putString("ECRITURE1", ecriture1);
+                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            Joueur10.putString("ECRITURE2", ecriture2);
+                        }
+                        if (randmeme==4 || randmeme==6){
+                            EditText editText2 = (EditText) findViewById(R.id.ecriture2);
+                            String ecriture2 = editText2.getText().toString();
+                            EditText editText3 = (EditText) findViewById(R.id.ecriture3);
+                            String ecriture3 = editText3.getText().toString();
+                            Joueur10.putString("ECRITURE2", ecriture2);
+                            Joueur10.putString("ECRITURE3", ecriture3);
+                        }
+                        data3.putBundle("JOUEUR10",Joueur10);
                     }
                     data3.putInt("IDJOUEUR",idjoueur);
-                    data3.putInt("MEME",randmeme);
                     intent.putExtras(data3);
                     startActivity(intent);
                 }
