@@ -2,6 +2,8 @@ package com.example.garticmemeproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -20,11 +22,15 @@ import java.util.Random;
 
 public class CreationmemeActivity extends AppCompatActivity {
 
+    private Bundle data3;
+    private int idprofil;
+    private String theme;
+    public int randmeme = hazard();
     private int progressTime = 0;
     private TextView time;
     private ImageView imageView;
     private CountDownTimer countDownTimer;
-    private long timeLeftInMilliseconds = 100000; //1 min 40
+    private long timeLeftInMilliseconds = 5000; //1 min 40      100000
     public static final String EXTRA_MESSAGE3 = "";
     public static final String EXTRA_MEME = "";
     private int progress = 100;
@@ -35,27 +41,34 @@ public class CreationmemeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_creationmeme);
+        setContentView(R.layout.activity_local_game);
 
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(PlayersActivity.EXTRA_MESSAGE2);
+
+        CreationemeFragment creationemeFragment = new CreationemeFragment();
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.fragmentContainerView, creationemeFragment)
+                .commit();
+
+
+
+        data3 = getIntent().getExtras();
+
+        String theme = data3.getString("THEME");
         TextView textView = findViewById(R.id.themecreate);
-        textView.setText("Thème : " + message);
+        textView.setText("Thème : " + theme);
 
 //______________________________Image MEME__________________________________________________________________
 
         ImageView imgMeme = (ImageView) findViewById(R.id.meme);
-        Random rand = new Random();
-        int randmeme = rand.nextInt(6) + 1;
         String imgName = "meme" + randmeme;
         int id = getResources().getIdentifier(imgName, "drawable", getPackageName());
         imgMeme.setImageResource(id);
 
 //______________________________Image Profil__________________________________________________________________
 
-        int randprofil = intent.getIntExtra(PlayersActivity.EXTRA_PROFIL,0);
         ImageView imgProfil = (ImageView) findViewById(R.id.imagejoueurx);
-        String imgPP = "profil" + randprofil;
+        int idprofil = data3.getInt("NBJOUEUR");
+        String imgPP = "profil" + idprofil;
         int id2 = getResources().getIdentifier(imgPP, "drawable", getPackageName());
         imgProfil.setImageResource(id2);
 
@@ -70,8 +83,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         CreationmemeActivity.this,
                         VoteActivity.class
                 );
-                intent.putExtra(EXTRA_MESSAGE3, message);
-                intent.putExtra(EXTRA_MEME, randmeme);
+                data3.putInt("MEME",randmeme);
+                intent.putExtras(data3);
+                if (countDownTimer != null){
+                    countDownTimer.cancel();
+                }
+                intent.putExtras(data3);
                 startActivity(intent);
             }
         });
@@ -81,7 +98,7 @@ public class CreationmemeActivity extends AppCompatActivity {
         startTimer();
     }
 
-//----------------------------------------Timer--------------------------------------------------------------------------
+    //----------------------------------------Timer--------------------------------------------------------------------------
     public void startTimer(){
         countDownTimer = new CountDownTimer(timeLeftInMilliseconds, 1000) {
             @Override
@@ -94,8 +111,10 @@ public class CreationmemeActivity extends AppCompatActivity {
             public void onFinish() {
                 Intent intent = new Intent(
                         CreationmemeActivity.this,
-                        FinActivity.class
+                        VoteActivity.class
                 );
+                data3.putInt("MEME",randmeme);
+                intent.putExtras(data3);
                 startActivity(intent);
             }
         }.start();
@@ -120,4 +139,9 @@ public class CreationmemeActivity extends AppCompatActivity {
 
     }
 
+    public int hazard(){
+        Random rand = new Random();
+        int hazardnumber = rand.nextInt(6) + 1;
+        return (hazardnumber);
+    }
 }

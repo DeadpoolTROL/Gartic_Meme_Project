@@ -8,10 +8,12 @@
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/drawable/splash_background.xml" value="0.67" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_creationmeme.xml" value="0.33" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_easter_egg.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_fin.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_fin.xml" value="0.33" />
+        <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_jean_profite.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_parametre.xml" value="0.33" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_players.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_pooltato.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_regles.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_resultat_tableau.xml" value="0.1" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/layout/activity_vote.xml" value="0.33" />
@@ -20,16 +22,18 @@
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/mipmap-anydpi-v26/icone.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/ADMIN/Desktop/Gartic_Meme_Project/app/src/main/res/mipmap-anydpi-v26/icone_round.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_creationmeme.xml" value="0.20153985507246377" />
-        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_fin.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_local_game.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_creationmeme.xml" value="0.1375" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_easter_egg.xml" value="0.176" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_fin.xml" value="0.1375" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_local_game.xml" value="0.1" />
         <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_parametre.xml" value="0.1" />
-        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_players.xml" value="0.1" />
-        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_regles.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_vote.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/fragment_meme_edit.xml" value="0.20153985507246377" />
-        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/fragment_player.xml" value="0.1716485507246377" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_players.xml" value="0.2" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_regles.xml" value="0.1375" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_resultat_tableau.xml" value="0.1375" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/activity_vote.xml" value="0.1375" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/fragment_creationeme_layout.xml" value="0.2" />
+        <entry key="..\:/Users/Battl/AndroidStudioProjects/Gartic_Meme_Project/app/src/main/res/layout/fragment_player_layout.xml" value="0.1375" />
         <entry key="..\:/Users/fisso/AndroidStudioProjects/GarticMemeProject/app/src/main/res/layout/activity_fin.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/fisso/AndroidStudioProjects/GarticMemeProject/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/fisso/AndroidStudioProjects/GarticMemeProject/app/src/main/res/layout/activity_parametre.xml" value="0.25416666666666665" />
