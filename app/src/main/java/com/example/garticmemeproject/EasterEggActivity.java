@@ -3,6 +3,7 @@ package com.example.garticmemeproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class EasterEggActivity extends AppCompatActivity {
+    private MediaPlayer mp1 = null;
+    private MediaPlayer mp2 = null;
 
     //private Bundle data8;
     Button bouton;
@@ -24,7 +27,8 @@ public class EasterEggActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_easter_egg);
-
+        mp1 = MediaPlayer.create(this, R.raw.anime_wow);
+        mp2 = MediaPlayer.create(this, R.raw.bruh);
         //data8 = getIntent().getExtras();
 
         bouton = (Button) findViewById(R.id.buttonsecret);
@@ -48,6 +52,7 @@ public class EasterEggActivity extends AppCompatActivity {
                         PooltatoActivity.class
                 );
                 //intent.putExtras(data8);
+                mp1.start();
                 startActivity(intent);
                 return false;
             }
@@ -62,6 +67,7 @@ public class EasterEggActivity extends AppCompatActivity {
                         JeanProfiteActivity.class
                 );
                 //intent.putExtras(data8);
+                mp2.start();
                 startActivity(intent);
                 return false;
             }

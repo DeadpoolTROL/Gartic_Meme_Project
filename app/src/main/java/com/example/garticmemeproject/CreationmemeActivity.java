@@ -3,6 +3,7 @@ package com.example.garticmemeproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -18,6 +19,7 @@ import java.util.Random;
 
 public class CreationmemeActivity extends AppCompatActivity {
 
+    private MediaPlayer mp = null;
     private Bundle data3;
     private int nbjoueur;
     private int idjoueur;
@@ -38,6 +40,7 @@ public class CreationmemeActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_creationmeme+randmeme);
+        mp = MediaPlayer.create(this, R.raw.musica_ascenseur);
 
         data3 = getIntent().getExtras();
 
@@ -75,7 +78,7 @@ public class CreationmemeActivity extends AppCompatActivity {
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                mp.stop();
                 if (countDownTimer != null){
                     countDownTimer.cancel();
                 }
@@ -1000,7 +1003,7 @@ public class CreationmemeActivity extends AppCompatActivity {
         time.setText(timeleftText);
         progress = progress - 1;
         progressBar.setProgress(progress); // Default 0.
-
+        if (timeLeftInMilliseconds<=10000) mp.start();
     }
 
     public int hazard(){
