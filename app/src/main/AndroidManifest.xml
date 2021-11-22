@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GarticMEMEProject">
         <activity
+            android:name=".CurlyActivity"
+            android:exported="false" />
+        <activity
             android:name=".JeanProfiteActivity"
             android:exported="false" />
         <activity

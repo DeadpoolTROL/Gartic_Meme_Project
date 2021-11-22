@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212729"
+    tools:context=".CreationmemeActivity">
+
+    <ImageView
+        android:id="@+id/Curly"
+        android:layout_width="285dp"
+        android:layout_height="445dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Curlytext"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@drawable/front_fr_67_400_removebg_preview" />
+
+    <TextView
+        android:id="@+id/Curlytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="T'as pas d'ami ? \nPrend un curly !!!"
+        android:textColor="#438C17"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="242dp"
+        android:layout_height="132dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Curly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Curly"
+        app:layout_constraintTop_toTopOf="@+id/Curly"
+        app:layout_constraintVertical_bias="0.814"
+        app:srcCompat="@drawable/nelson_simpsons_ah_ah_removebg_preview__2_" />
+</androidx.constraintlayout.widget.ConstraintLayout>

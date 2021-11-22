@@ -56,10 +56,6 @@ public class ParametreActivity extends AppCompatActivity {
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(
-                        ParametreActivity.this,
-                        PlayersActivity.class
-                );
                 nbjoueur = seekbar.getProgress();
                 EditText editText = (EditText) findViewById(R.id.EditTheme);
                 String theme = editText.getText().toString();
@@ -68,8 +64,24 @@ public class ParametreActivity extends AppCompatActivity {
                 data.putInt("IDJOUEUR", idjoueur);
                 data.putInt("IDJOUEUR2", idjoueur2);
                 data.putInt("NBJOUEUR", nbjoueur);
-                intent.putExtras(data);
-                startActivity(intent);
+
+                if (nbjoueur == 1){
+                    Intent intent = new Intent(
+                            ParametreActivity.this,
+                            CurlyActivity.class
+                    );
+                    intent.putExtras(data);
+                    startActivity(intent);
+                }
+                else{
+                    Intent intent = new Intent(
+                            ParametreActivity.this,
+                            PlayersActivity.class
+                    );
+                    intent.putExtras(data);
+                    startActivity(intent);
+                }
+
             }
         });
     }
