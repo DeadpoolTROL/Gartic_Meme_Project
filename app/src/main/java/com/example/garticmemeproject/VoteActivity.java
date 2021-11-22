@@ -51,6 +51,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ1",count);
         }
         if (idjoueur2 == 2){
             Bundle Joueur2 = data4.getBundle("JOUEUR2");
@@ -73,6 +74,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ2",count);
         }
         if (idjoueur2 == 3){
             Bundle Joueur3 = data4.getBundle("JOUEUR3");
@@ -95,6 +97,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ3",count);
         }
         if (idjoueur2 == 4){
             Bundle Joueur4 = data4.getBundle("JOUEUR4");
@@ -117,6 +120,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ4",count);
         }
         if (idjoueur2 == 5){
             Bundle Joueur5 = data4.getBundle("JOUEUR5");
@@ -139,6 +143,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ5",count);
         }
         if (idjoueur2 == 6){
             Bundle Joueur6 = data4.getBundle("JOUEUR6");
@@ -161,6 +166,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ6",count);
         }
         if (idjoueur2 == 7){
             Bundle Joueur7 = data4.getBundle("JOUEUR7");
@@ -183,6 +189,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ7",count);
         }
         if (idjoueur2 == 8){
             Bundle Joueur8 = data4.getBundle("JOUEUR8");
@@ -205,6 +212,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ8",count);
         }
         if (idjoueur2 == 9){
             Bundle Joueur9 = data4.getBundle("JOUEUR9");
@@ -227,6 +235,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ9",count);
         }
         if (idjoueur2 == 10){
             Bundle Joueur10 = data4.getBundle("JOUEUR10");
@@ -249,6 +258,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
+            data4.getInt("VALUEJ10",count);
         }
 
         String theme = data4.getString("THEME");

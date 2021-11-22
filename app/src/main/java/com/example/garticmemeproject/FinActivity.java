@@ -10,6 +10,10 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class FinActivity extends AppCompatActivity {
 
@@ -17,6 +21,8 @@ public class FinActivity extends AppCompatActivity {
     private ImageView Layout;
     private ImageView Layout2;
     private Button bouton;
+    ArrayList listeScore = new ArrayList();
+    private int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +32,32 @@ public class FinActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fin);
 
         data5 = getIntent().getExtras();
+
+        int nbjoueur = data5.getInt("NBJOUEUR");
+
+        for (i=1; i<=nbjoueur; i++){
+            listeScore.add(data5.getInt("VALUEJ"+i));
+        }
+        Collections.sort(listeScore, Collections.reverseOrder());
+
+        if (nbjoueur == 1){
+            TextView score1 = findViewById(R.id.pts1);
+            score1.setText(listeScore.get(0)+"pts");
+        }
+        if (nbjoueur == 2){
+            TextView score1 = findViewById(R.id.pts1);
+            score1.setText(listeScore.get(0)+"pts");
+            TextView score2 = findViewById(R.id.pts2);
+            score2.setText(listeScore.get(1)+"pts");
+        }
+        if (nbjoueur == 3 || nbjoueur == 4 || nbjoueur == 5 || nbjoueur == 6 || nbjoueur == 7 || nbjoueur == 8 || nbjoueur == 9 || nbjoueur == 10){
+            TextView score1 = findViewById(R.id.pts1);
+            score1.setText(listeScore.get(0)+"pts");
+            TextView score2 = findViewById(R.id.pts2);
+            score2.setText(listeScore.get(1)+"pts");
+            TextView score3 = findViewById(R.id.pts3);
+            score3.setText(listeScore.get(2)+"pts");
+        }
 
         bouton = (Button) findViewById(R.id.buttonfin);
         bouton.setOnClickListener(new View.OnClickListener() {

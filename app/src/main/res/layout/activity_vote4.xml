@@ -120,7 +120,11 @@
         app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="@+id/Meme"
         app:layout_constraintTop_toTopOf="@+id/Meme"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintVertical_bias="0.035"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"/>
 
     <TextView
         android:id="@+id/ecriture2"
@@ -137,7 +141,11 @@
         app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="@+id/Meme"
         app:layout_constraintTop_toTopOf="@+id/Meme"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintVertical_bias="0.49"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"/>
 
     <TextView
         android:id="@+id/ecriture3"
@@ -154,5 +162,9 @@
         app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="@+id/Meme"
         app:layout_constraintTop_toTopOf="@+id/Meme"
-        app:layout_constraintVertical_bias="0.952" />
+        app:layout_constraintVertical_bias="0.952"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
