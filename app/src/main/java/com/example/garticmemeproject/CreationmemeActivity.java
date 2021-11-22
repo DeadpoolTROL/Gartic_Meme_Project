@@ -75,16 +75,17 @@ public class CreationmemeActivity extends AppCompatActivity {
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (countDownTimer != null){
+                    countDownTimer.cancel();
+                }
+
                 if (idjoueur < nbjoueur){
                     Intent intent = new Intent(
                             CreationmemeActivity.this,
                             PlayersActivity.class
                     );
                     data3.putInt("IDJOUEUR",idjoueur);
-
-                    if (countDownTimer != null){
-                        countDownTimer.cancel();
-                    }
 
                     if (idjoueur == 1){
                         Bundle Joueur1 = new Bundle();
@@ -305,10 +306,6 @@ public class CreationmemeActivity extends AppCompatActivity {
                             VoteActivity.class
                     );
                     data3.putInt("IDJOUEUR",idjoueur);
-
-                    if (countDownTimer != null){
-                        countDownTimer.cancel();
-                    }
 
                     if (idjoueur == 1){
                         Bundle Joueur1 = new Bundle();
