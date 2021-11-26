@@ -29,7 +29,7 @@ public class PlayersActivity extends AppCompatActivity {
 
         data2 = getIntent().getExtras();
 
-        int idjoueur = data2.getInt("IDJOUEUR") + 1;
+        idjoueur = data2.getInt("IDJOUEUR",0) + 1;
 
         Button bouton;
         bouton = (Button) findViewById(R.id.buttonjoueur);

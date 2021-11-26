@@ -28,7 +28,7 @@ public class VoteActivity extends AppCompatActivity {
 
 //---------------------------------------ID joueur---------------------------------------------------------------------------
         int nbjoueur = data4.getInt("NBJOUEUR");
-        int idjoueur2 = data4.getInt("IDJOUEUR2") + 1;
+        idjoueur2 = data4.getInt("IDJOUEUR2") + 1;
 
         if (idjoueur2 == 1){
             Bundle Joueur1 = data4.getBundle("JOUEUR1");
@@ -51,7 +51,6 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ1",count);
         }
         if (idjoueur2 == 2){
             Bundle Joueur2 = data4.getBundle("JOUEUR2");
@@ -74,7 +73,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ2",count);
+            data4.putInt("VALUEJ2",count);
         }
         if (idjoueur2 == 3){
             Bundle Joueur3 = data4.getBundle("JOUEUR3");
@@ -97,7 +96,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ3",count);
+            data4.putInt("VALUEJ3",count);
         }
         if (idjoueur2 == 4){
             Bundle Joueur4 = data4.getBundle("JOUEUR4");
@@ -120,7 +119,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ4",count);
+            data4.putInt("VALUEJ4",count);
         }
         if (idjoueur2 == 5){
             Bundle Joueur5 = data4.getBundle("JOUEUR5");
@@ -143,7 +142,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ5",count);
+            data4.putInt("VALUEJ5",count);
         }
         if (idjoueur2 == 6){
             Bundle Joueur6 = data4.getBundle("JOUEUR6");
@@ -166,7 +165,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ6",count);
+            data4.putInt("VALUEJ6",count);
         }
         if (idjoueur2 == 7){
             Bundle Joueur7 = data4.getBundle("JOUEUR7");
@@ -189,7 +188,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ7",count);
+            data4.putInt("VALUEJ7",count);
         }
         if (idjoueur2 == 8){
             Bundle Joueur8 = data4.getBundle("JOUEUR8");
@@ -212,7 +211,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ8",count);
+            data4.putInt("VALUEJ8",count);
         }
         if (idjoueur2 == 9){
             Bundle Joueur9 = data4.getBundle("JOUEUR9");
@@ -235,7 +234,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ9",count);
+            data4.putInt("VALUEJ9",count);
         }
         if (idjoueur2 == 10){
             Bundle Joueur10 = data4.getBundle("JOUEUR10");
@@ -258,7 +257,7 @@ public class VoteActivity extends AppCompatActivity {
                 TextView textView3 = findViewById(R.id.ecriture3);
                 textView3.setText(ecriture3);
             }
-            data4.getInt("VALUEJ10",count);
+            data4.putInt("VALUEJ10",count);
         }
 
         String theme = data4.getString("THEME");
@@ -287,6 +286,18 @@ public class VoteActivity extends AppCompatActivity {
                             VoteActivity.class
                     );
                     data4.putInt("IDJOUEUR2",idjoueur2);
+                    switch (idjoueur2){
+                        case 1 : data4.putInt("VALUEJ1",count);break;
+                        case 2 : data4.putInt("VALUEJ2",count);break;
+                        case 3 : data4.putInt("VALUEJ3",count);break;
+                        case 4 : data4.putInt("VALUEJ4",count);break;
+                        case 5 : data4.putInt("VALUEJ5",count);break;
+                        case 6 : data4.putInt("VALUEJ6",count);break;
+                        case 7 : data4.putInt("VALUEJ7",count);break;
+                        case 8 : data4.putInt("VALUEJ8",count);break;
+                        case 9 : data4.putInt("VALUEJ9",count);break;
+                        case 10 : data4.putInt("VALUEJ10",count);break;
+                    }
                     intent.putExtras(data4);
                     startActivity(intent);
                 }
@@ -295,6 +306,18 @@ public class VoteActivity extends AppCompatActivity {
                             VoteActivity.this,
                             FinActivity.class
                     );
+                    switch (idjoueur2){
+                        case 1 : data4.putInt("VALUEJ1",count);break;
+                        case 2 : data4.putInt("VALUEJ2",count);break;
+                        case 3 : data4.putInt("VALUEJ3",count);break;
+                        case 4 : data4.putInt("VALUEJ4",count);break;
+                        case 5 : data4.putInt("VALUEJ5",count);break;
+                        case 6 : data4.putInt("VALUEJ6",count);break;
+                        case 7 : data4.putInt("VALUEJ7",count);break;
+                        case 8 : data4.putInt("VALUEJ8",count);break;
+                        case 9 : data4.putInt("VALUEJ9",count);break;
+                        case 10 : data4.putInt("VALUEJ10",count);break;
+                    }
                     intent.putExtras(data4);
                     startActivity(intent);
                 }

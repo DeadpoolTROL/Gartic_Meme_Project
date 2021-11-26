@@ -111,7 +111,7 @@
         android:layout_height="102dp"
         android:background="@android:color/transparent"
         android:gravity="center"
-        android:maxLength="50"
+        android:maxLength="30"
         android:maxLines="5"
         android:text="TextView"
         android:textColor="#000000"
