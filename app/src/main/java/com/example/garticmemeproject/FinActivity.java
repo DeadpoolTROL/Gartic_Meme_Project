@@ -18,8 +18,7 @@ import java.util.Collections;
 
 public class FinActivity extends AppCompatActivity {
 
-    private MediaPlayer mp1 = null;
-    private MediaPlayer mp2 = null;
+    private MediaPlayer mp = null;
     private Bundle data5;
     private ImageView Layout;
     private ImageView Layout2;
@@ -33,8 +32,7 @@ public class FinActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_fin);
-        mp1 = MediaPlayer.create(this, R.raw.celebration);
-        mp2 = MediaPlayer.create(this, R.raw.metal_gear_solid_alert);
+        mp = MediaPlayer.create(this, R.raw.metal_gear_solid_alert);
 
         data5 = getIntent().getExtras();
 
@@ -84,7 +82,6 @@ public class FinActivity extends AppCompatActivity {
                         FinActivity.this,
                         ResultatTableauActivity.class
                 );
-                mp1.start();
                 intent.putExtras(data5);
                 startActivity(intent);
                 return false;
@@ -99,7 +96,7 @@ public class FinActivity extends AppCompatActivity {
                         FinActivity.this,
                         EasterEggActivity.class
                 );
-                mp2.start();
+                mp.start();
                 //intent.putExtras(data5);
                 startActivity(intent);
                 return false;
