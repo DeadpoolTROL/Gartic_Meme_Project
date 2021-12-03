@@ -52,6 +52,7 @@ public class ResultatTableauActivity extends AppCompatActivity {
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mp.stop();
                 Intent intent = new Intent(
                         ResultatTableauActivity.this,
                         FinActivity.class
