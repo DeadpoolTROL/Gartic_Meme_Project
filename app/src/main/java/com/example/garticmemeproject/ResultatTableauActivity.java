@@ -3,6 +3,7 @@ package com.example.garticmemeproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 
 public class ResultatTableauActivity extends AppCompatActivity {
 
+    private MediaPlayer mp = null;
     private Bundle data6;
     Button bouton;
     ListView listView;
@@ -30,7 +32,8 @@ public class ResultatTableauActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_resultat_tableau);
-
+        mp = MediaPlayer.create(this, R.raw.celebration);
+        mp.start();
         data6 = getIntent().getExtras();
 
         int nbjoueur = data6.getInt("NBJOUEUR");
@@ -57,5 +60,11 @@ public class ResultatTableauActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        mp.stop();
+        super.onBackPressed();
     }
 }
