@@ -106,4 +106,10 @@ public class FinActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+
+        return;
+    }
 }

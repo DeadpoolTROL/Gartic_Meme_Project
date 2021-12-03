@@ -56,4 +56,13 @@ public class PlayersActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }}
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (idjoueur==1){
+            super.onBackPressed();
+        }
+        return;
+    }
+}

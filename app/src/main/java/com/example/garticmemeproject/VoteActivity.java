@@ -337,4 +337,10 @@ public class VoteActivity extends AppCompatActivity {
         else count--;
         value.setText("" + count);
     }
+
+    @Override
+    public void onBackPressed() {
+
+        return;
+    }
 }

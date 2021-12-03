@@ -1022,4 +1022,10 @@ public class CreationmemeActivity extends AppCompatActivity {
         String ecriture2 = editText2.getText().toString();
         return (ecriture2);
     }
+
+    @Override
+    public void onBackPressed() {
+
+        return;
+    }
 }
