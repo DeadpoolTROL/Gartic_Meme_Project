@@ -1008,7 +1008,7 @@ public class CreationmemeActivity extends AppCompatActivity {
 
     public int hazard(){
         Random rand = new Random();
-        int hazardnumber = rand.nextInt(6) + 1;
+        int hazardnumber = rand.nextInt(30) + 1;
         return (hazardnumber);
     }
 
