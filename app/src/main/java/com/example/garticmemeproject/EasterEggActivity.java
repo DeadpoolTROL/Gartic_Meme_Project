@@ -16,7 +16,7 @@ public class EasterEggActivity extends AppCompatActivity {
     private MediaPlayer mp1 = null;
     private MediaPlayer mp2 = null;
 
-    //private Bundle data8;
+    private Bundle data8;
     Button bouton;
     private ImageView LayoutPooltato;
     private ImageView LayoutJeanProfite;
@@ -29,7 +29,7 @@ public class EasterEggActivity extends AppCompatActivity {
         setContentView(R.layout.activity_easter_egg);
         mp1 = MediaPlayer.create(this, R.raw.anime_wow);
         mp2 = MediaPlayer.create(this, R.raw.bruh);
-        //data8 = getIntent().getExtras();
+        data8 = getIntent().getExtras();
 
         bouton = (Button) findViewById(R.id.buttonsecret);
         bouton.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +39,7 @@ public class EasterEggActivity extends AppCompatActivity {
                         EasterEggActivity.this,
                         FinActivity.class
                 );
+                intent.putExtras(data8);
                 startActivity(intent);
             }
         });
@@ -51,7 +52,7 @@ public class EasterEggActivity extends AppCompatActivity {
                         EasterEggActivity.this,
                         PooltatoActivity.class
                 );
-                //intent.putExtras(data8);
+                intent.putExtras(data8);
                 mp1.start();
                 startActivity(intent);
                 return false;
@@ -66,7 +67,7 @@ public class EasterEggActivity extends AppCompatActivity {
                         EasterEggActivity.this,
                         JeanProfiteActivity.class
                 );
-                //intent.putExtras(data8);
+                intent.putExtras(data8);
                 mp2.start();
                 startActivity(intent);
                 return false;

@@ -22,7 +22,6 @@ public class FinActivity extends AppCompatActivity {
     private ImageView Layout;
     private ImageView Layout2;
     private Button bouton;
-    //ArrayList listeScore = new ArrayList();
     private Map<Integer, String> listeScore = new HashMap<>();
     private Set<Integer> indexe = new HashSet<>();
     private int i;
@@ -46,7 +45,6 @@ public class FinActivity extends AppCompatActivity {
         Map<Integer, String> sortedListeScore = sortByValue(listeScore);
         indexe = sortedListeScore.keySet();
         Object[] indice = indexe.toArray();
-        //Collections.sort(listeScore, Collections.reverseOrder());
 
         if (nbjoueur == 1){
             ImageView imgView = (ImageView) findViewById(R.id.imageView1);
@@ -128,7 +126,7 @@ public class FinActivity extends AppCompatActivity {
                         EasterEggActivity.class
                 );
                 mp.start();
-                //intent.putExtras(data5);
+                intent.putExtras(data5);
                 startActivity(intent);
                 return false;
             }

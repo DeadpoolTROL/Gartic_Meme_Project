@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 public class JeanProfiteActivity extends AppCompatActivity {
 
-    //private Bundle data7;
+    private Bundle data7;
     private ImageView Layout;
 
     @Override
@@ -22,7 +22,7 @@ public class JeanProfiteActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_jean_profite);
 
-        //data7 = getIntent().getExtras();
+        data7 = getIntent().getExtras();
 
         Layout = findViewById(R.id.logo1);
         Layout.setOnTouchListener(new View.OnTouchListener() {
@@ -32,7 +32,7 @@ public class JeanProfiteActivity extends AppCompatActivity {
                         JeanProfiteActivity.this,
                         EasterEggActivity.class
                 );
-                //intent.putExtras(data7);
+                intent.putExtras(data7);
                 startActivity(intent);
                 return false;
             }

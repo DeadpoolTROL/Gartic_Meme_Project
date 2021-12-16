@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 public class PooltatoActivity extends AppCompatActivity {
 
-    //private Bundle data7;
+    private Bundle data111;
     private ImageView Layout;
 
     @Override
@@ -22,7 +22,7 @@ public class PooltatoActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_pooltato);
 
-        //data7 = getIntent().getExtras();
+        data111 = getIntent().getExtras();
 
         Layout = findViewById(R.id.logo1);
         Layout.setOnTouchListener(new View.OnTouchListener() {
@@ -32,7 +32,7 @@ public class PooltatoActivity extends AppCompatActivity {
                         PooltatoActivity.this,
                         EasterEggActivity.class
                 );
-                //intent.putExtras(data7);
+                intent.putExtras(data111);
                 startActivity(intent);
                 return false;
             }
