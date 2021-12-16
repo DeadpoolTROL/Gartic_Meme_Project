@@ -38,12 +38,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur1.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur1.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur1.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
@@ -60,12 +60,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur2.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur2.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur2.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
@@ -83,12 +83,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur3.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur3.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur3.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
@@ -106,12 +106,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur4.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur4.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur4.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
@@ -129,12 +129,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur5.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur5.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur5.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
@@ -152,12 +152,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur6.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur6.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur6.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
@@ -175,12 +175,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur7.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur7.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur7.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
@@ -198,12 +198,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur8.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur8.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur8.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
@@ -221,12 +221,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur9.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur9.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur9.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
@@ -244,12 +244,12 @@ public class VoteActivity extends AppCompatActivity {
             String ecriture1 = Joueur10.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
             textView1.setText(ecriture1);
-            if (randmeme==1 || randmeme==3 || randmeme==5){
+            if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                 String ecriture2 = Joueur10.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);
             }
-            if (randmeme==4 || randmeme==6){
+            if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                 String ecriture2 = Joueur10.getString("ECRITURE2");
                 TextView textView2 = findViewById(R.id.ecriture2);
                 textView2.setText(ecriture2);

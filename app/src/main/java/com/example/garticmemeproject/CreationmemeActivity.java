@@ -96,12 +96,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur1.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur1.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -117,12 +117,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur2.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur2.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -138,12 +138,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur3.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur3.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -159,12 +159,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur4.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur4.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -180,12 +180,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur5.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur5.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -201,12 +201,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur6.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur6.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -222,12 +222,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur7.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur7.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -243,12 +243,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur8.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur8.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -264,12 +264,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur9.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur9.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -285,12 +285,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur10.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur10.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -316,12 +316,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur1.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur1.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -337,12 +337,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur2.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur2.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -358,12 +358,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur3.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur3.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -379,12 +379,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur4.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur4.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -400,12 +400,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur5.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur5.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -421,12 +421,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur6.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur6.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -442,12 +442,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur7.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur7.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -463,12 +463,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur8.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur8.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -484,12 +484,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur9.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur9.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -505,12 +505,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur10.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur10.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -556,12 +556,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur1.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur1.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -577,12 +577,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur2.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur2.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -598,12 +598,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur3.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur3.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -619,12 +619,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur4.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur4.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -640,12 +640,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur5.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur5.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -661,12 +661,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur6.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur6.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -682,12 +682,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur7.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur7.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -703,12 +703,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur8.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur8.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -724,12 +724,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur9.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur9.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -745,12 +745,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur10.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur10.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -775,12 +775,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur1.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur1.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -796,12 +796,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur2.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur2.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -817,12 +817,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur3.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur3.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -838,12 +838,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur4.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur4.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -859,12 +859,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur5.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur5.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -880,12 +880,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur6.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur6.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -901,12 +901,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur7.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur7.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -922,12 +922,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur8.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur8.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -943,12 +943,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur9.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur9.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
@@ -964,12 +964,12 @@ public class CreationmemeActivity extends AppCompatActivity {
                         EditText editText1 = (EditText) findViewById(R.id.ecriture1);
                         String ecriture1 = editText1.getText().toString();
                         Joueur10.putString("ECRITURE1", ecriture1);
-                        if (randmeme==1 || randmeme==3 || randmeme==5){
+                        if (randmeme==1 || randmeme==3 || randmeme==5 || randmeme==7 || randmeme==11 || randmeme==13 || randmeme==14 || randmeme==22 || randmeme==24 || randmeme==25){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             Joueur10.putString("ECRITURE2", ecriture2);
                         }
-                        if (randmeme==4 || randmeme==6){
+                        if (randmeme==4 || randmeme==6 || randmeme==8 || randmeme==9 || randmeme==10 || randmeme==12 || randmeme==15 || randmeme==26){
                             EditText editText2 = (EditText) findViewById(R.id.ecriture2);
                             String ecriture2 = editText2.getText().toString();
                             EditText editText3 = (EditText) findViewById(R.id.ecriture3);
