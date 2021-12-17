@@ -39,7 +39,39 @@ public class CreationmemeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_creationmeme+randmeme);
+        switch (randmeme){
+            case 1 : setContentView(R.layout.activity_creationmeme1);break;
+            case 2 : setContentView(R.layout.activity_creationmeme2);break;
+            case 3 : setContentView(R.layout.activity_creationmeme3);break;
+            case 4 : setContentView(R.layout.activity_creationmeme4);break;
+            case 5 : setContentView(R.layout.activity_creationmeme5);break;
+            case 6 : setContentView(R.layout.activity_creationmeme6);break;
+            case 7 : setContentView(R.layout.activity_creationmeme7);break;
+            case 8 : setContentView(R.layout.activity_creationmeme8);break;
+            case 9 : setContentView(R.layout.activity_creationmeme9);break;
+            case 10 : setContentView(R.layout.activity_creationmeme10);break;
+            case 11 : setContentView(R.layout.activity_creationmeme11);break;
+            case 12 : setContentView(R.layout.activity_creationmeme12);break;
+            case 13 : setContentView(R.layout.activity_creationmeme13);break;
+            case 14 : setContentView(R.layout.activity_creationmeme14);break;
+            case 15 : setContentView(R.layout.activity_creationmeme15);break;
+            case 16 : setContentView(R.layout.activity_creationmeme16);break;
+            case 17 : setContentView(R.layout.activity_creationmeme17);break;
+            case 18 : setContentView(R.layout.activity_creationmeme18);break;
+            case 19 : setContentView(R.layout.activity_creationmeme19);break;
+            case 20 : setContentView(R.layout.activity_creationmeme20);break;
+            case 21 : setContentView(R.layout.activity_creationmeme21);break;
+            case 22 : setContentView(R.layout.activity_creationmeme22);break;
+            case 23 : setContentView(R.layout.activity_creationmeme23);break;
+            case 24 : setContentView(R.layout.activity_creationmeme24);break;
+            case 25 : setContentView(R.layout.activity_creationmeme25);break;
+            case 26 : setContentView(R.layout.activity_creationmeme26);break;
+            case 27 : setContentView(R.layout.activity_creationmeme27);break;
+            case 28 : setContentView(R.layout.activity_creationmeme28);break;
+            case 29 : setContentView(R.layout.activity_creationmeme29);break;
+            case 30 : setContentView(R.layout.activity_creationmeme30);break;
+        }
+        //setContentView(R.layout.activity_creationmeme+randmeme);
         mp = MediaPlayer.create(this, R.raw.musica_ascenseur);
 
         data3 = getIntent().getExtras();

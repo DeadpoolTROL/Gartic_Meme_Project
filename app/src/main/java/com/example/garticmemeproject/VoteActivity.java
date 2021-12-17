@@ -33,7 +33,39 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 1){
             Bundle Joueur1 = data4.getBundle("JOUEUR1");
             int randmeme = Joueur1.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            //setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur1.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
@@ -55,7 +87,38 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 2){
             Bundle Joueur2 = data4.getBundle("JOUEUR2");
             int randmeme = Joueur2.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur2.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
@@ -78,7 +141,38 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 3){
             Bundle Joueur3 = data4.getBundle("JOUEUR3");
             int randmeme = Joueur3.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur3.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
@@ -101,7 +195,38 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 4){
             Bundle Joueur4 = data4.getBundle("JOUEUR4");
             int randmeme = Joueur4.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur4.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
@@ -124,7 +249,38 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 5){
             Bundle Joueur5 = data4.getBundle("JOUEUR5");
             int randmeme = Joueur5.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur5.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
@@ -147,7 +303,38 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 6){
             Bundle Joueur6 = data4.getBundle("JOUEUR6");
             int randmeme = Joueur6.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur6.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
@@ -170,7 +357,38 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 7){
             Bundle Joueur7 = data4.getBundle("JOUEUR7");
             int randmeme = Joueur7.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur7.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
@@ -193,7 +411,38 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 8){
             Bundle Joueur8 = data4.getBundle("JOUEUR8");
             int randmeme = Joueur8.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur8.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
@@ -216,7 +465,38 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 9){
             Bundle Joueur9 = data4.getBundle("JOUEUR9");
             int randmeme = Joueur9.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur9.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
@@ -239,7 +519,38 @@ public class VoteActivity extends AppCompatActivity {
         if (idjoueur2 == 10){
             Bundle Joueur10 = data4.getBundle("JOUEUR10");
             int randmeme = Joueur10.getInt("MEME",1);
-            setContentView(R.layout.activity_vote+randmeme);
+            switch (randmeme){
+                case 1 : setContentView(R.layout.activity_vote1);break;
+                case 2 : setContentView(R.layout.activity_vote2);break;
+                case 3 : setContentView(R.layout.activity_vote3);break;
+                case 4 : setContentView(R.layout.activity_vote4);break;
+                case 5 : setContentView(R.layout.activity_vote5);break;
+                case 6 : setContentView(R.layout.activity_vote6);break;
+                case 7 : setContentView(R.layout.activity_vote7);break;
+                case 8 : setContentView(R.layout.activity_vote8);break;
+                case 9 : setContentView(R.layout.activity_vote9);break;
+                case 10 : setContentView(R.layout.activity_vote10);break;
+                case 11 : setContentView(R.layout.activity_vote11);break;
+                case 12 : setContentView(R.layout.activity_vote12);break;
+                case 13 : setContentView(R.layout.activity_vote13);break;
+                case 14 : setContentView(R.layout.activity_vote14);break;
+                case 15 : setContentView(R.layout.activity_vote15);break;
+                case 16 : setContentView(R.layout.activity_vote16);break;
+                case 17 : setContentView(R.layout.activity_vote17);break;
+                case 18 : setContentView(R.layout.activity_vote18);break;
+                case 19 : setContentView(R.layout.activity_vote19);break;
+                case 20 : setContentView(R.layout.activity_vote20);break;
+                case 21 : setContentView(R.layout.activity_vote21);break;
+                case 22 : setContentView(R.layout.activity_vote22);break;
+                case 23 : setContentView(R.layout.activity_vote23);break;
+                case 24 : setContentView(R.layout.activity_vote24);break;
+                case 25 : setContentView(R.layout.activity_vote25);break;
+                case 26 : setContentView(R.layout.activity_vote26);break;
+                case 27 : setContentView(R.layout.activity_vote27);break;
+                case 28 : setContentView(R.layout.activity_vote28);break;
+                case 29 : setContentView(R.layout.activity_vote29);break;
+                case 30 : setContentView(R.layout.activity_vote30);break;
+            }
 
             String ecriture1 = Joueur10.getString("ECRITURE1");
             TextView textView1 = findViewById(R.id.ecriture1);
