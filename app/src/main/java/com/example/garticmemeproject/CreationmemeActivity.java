@@ -21,17 +21,11 @@ public class CreationmemeActivity extends AppCompatActivity {
 
     private MediaPlayer mp = null;
     private Bundle data3;
-    private int nbjoueur;
-    private int idjoueur;
-    private String theme;
     public int randmeme = hazard();
     private int progressTime = 0;
     private TextView time;
-    private ImageView imageView;
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliseconds = 100000; //1 min 40      100000
-    public static final String EXTRA_MESSAGE3 = "";
-    public static final String EXTRA_MEME = "";
     private int progress = 100;
 
     @Override
