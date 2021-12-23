@@ -261,7 +261,7 @@ public class VoteActivity extends AppCompatActivity {
         String theme = data4.getString("THEME");
         TextView textView = findViewById(R.id.themevote);
         textView.setText("Thème : " + theme);
-        value=(TextView)findViewById(R.id.voteresult);
+        value= findViewById(R.id.voteresult);
 
 //______________________________Image MEME__________________________________________________________________
 
@@ -274,7 +274,7 @@ public class VoteActivity extends AppCompatActivity {
 //---------------------------------------Bouton---------------------------------------------------------------------------
 
         Button bouton;
-        bouton = (Button) findViewById(R.id.buttonvote);
+        bouton = findViewById(R.id.buttonvote);
         bouton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -339,6 +339,5 @@ public class VoteActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        return;
     }
 }
