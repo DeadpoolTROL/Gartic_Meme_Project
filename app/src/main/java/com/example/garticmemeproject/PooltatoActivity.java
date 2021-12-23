@@ -1,20 +1,19 @@
 package com.example.garticmemeproject;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class PooltatoActivity extends AppCompatActivity {
 
     private Bundle data111;
-    private ImageView Layout;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,18 +23,15 @@ public class PooltatoActivity extends AppCompatActivity {
 
         data111 = getIntent().getExtras();
 
-        Layout = findViewById(R.id.logo1);
-        Layout.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                Intent intent = new Intent(
-                        PooltatoActivity.this,
-                        EasterEggActivity.class
-                );
-                intent.putExtras(data111);
-                startActivity(intent);
-                return false;
-            }
+        ImageView layout = findViewById(R.id.logo1);
+        layout.setOnTouchListener((view, motionEvent) -> {
+            Intent intent = new Intent(
+                    PooltatoActivity.this,
+                    EasterEggActivity.class
+            );
+            intent.putExtras(data111);
+            startActivity(intent);
+            return false;
         });
     }
 }
