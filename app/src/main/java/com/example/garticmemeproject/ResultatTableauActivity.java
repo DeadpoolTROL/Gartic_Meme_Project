@@ -17,9 +17,7 @@ public class ResultatTableauActivity extends AppCompatActivity {
 
     private MediaPlayer mp = null;
     private Bundle data6;
-    Button bouton;
-    ListView listView;
-    ArrayList listeNom = new ArrayList();
+    private ArrayList listeNom = new ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +34,7 @@ public class ResultatTableauActivity extends AppCompatActivity {
         for (i =1; i <=nbjoueur; i++){
             listeNom.add(data6.getString("NOM"+ i));
         }
-        listView= findViewById(R.id.listView);
+        ListView listView = findViewById(R.id.listView);
         ArrayAdapter adapter = new ArrayAdapter<String>(
             this,
             android.R.layout.simple_list_item_1,
@@ -44,7 +42,7 @@ public class ResultatTableauActivity extends AppCompatActivity {
         );
         listView.setAdapter(adapter);
 
-        bouton = findViewById(R.id.ButtonRetour);
+        Button bouton = findViewById(R.id.ButtonRetour);
         bouton.setOnClickListener(v -> {
             mp.stop();
             Intent intent = new Intent(

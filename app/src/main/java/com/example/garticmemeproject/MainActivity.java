@@ -13,9 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     private MediaPlayer mp = null;
 
-    ImageView Layout;
-
-
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mp = MediaPlayer.create(this, R.raw.okay_lets_go);
-        Layout = findViewById(R.id.logo1);
-        Layout.setOnTouchListener((view, motionEvent) -> {
+        ImageView layout = findViewById(R.id.logo1);
+        layout.setOnTouchListener((view, motionEvent) -> {
             Intent intent = new Intent(
                     MainActivity.this,
                     ReglesActivity.class

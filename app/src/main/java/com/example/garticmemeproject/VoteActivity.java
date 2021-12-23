@@ -13,9 +13,9 @@ import android.widget.TextView;
 public class VoteActivity extends AppCompatActivity {
 
     private Bundle data4;
-    TextView value;
+    private TextView value;
     private int idjoueur2;
-    int count = 0;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -263,62 +263,29 @@ public class VoteActivity extends AppCompatActivity {
         textView.setText("Thème : " + theme);
         value= findViewById(R.id.voteresult);
 
-//______________________________Image MEME__________________________________________________________________
-
-        //int randmeme = getIntent().getIntExtra("MEME",1);
-        //ImageView imgMeme = (ImageView) findViewById(R.id.Meme);
-        //String imgMM = "meme" + randmeme;
-        //int id2 = getResources().getIdentifier(imgMM, "drawable", getPackageName());
-        //imgMeme.setImageResource(id2);
-
 //---------------------------------------Bouton---------------------------------------------------------------------------
 
         Button bouton;
         bouton = findViewById(R.id.buttonvote);
-        bouton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (idjoueur2 < nbjoueur){
-                    Intent intent = new Intent(
-                            VoteActivity.this,
-                            VoteActivity.class
-                    );
-                    data4.putInt("IDJOUEUR2",idjoueur2);
-                    switch (idjoueur2){
-                        case 1 : data4.putInt("VALUEJ1",count);break;
-                        case 2 : data4.putInt("VALUEJ2",count);break;
-                        case 3 : data4.putInt("VALUEJ3",count);break;
-                        case 4 : data4.putInt("VALUEJ4",count);break;
-                        case 5 : data4.putInt("VALUEJ5",count);break;
-                        case 6 : data4.putInt("VALUEJ6",count);break;
-                        case 7 : data4.putInt("VALUEJ7",count);break;
-                        case 8 : data4.putInt("VALUEJ8",count);break;
-                        case 9 : data4.putInt("VALUEJ9",count);break;
-                        case 10 : data4.putInt("VALUEJ10",count);break;
-                    }
-                    intent.putExtras(data4);
-                    startActivity(intent);
-                }
-                else if (idjoueur2 >= nbjoueur){
-                    Intent intent = new Intent(
-                            VoteActivity.this,
-                            FinActivity.class
-                    );
-                    switch (idjoueur2){
-                        case 1 : data4.putInt("VALUEJ1",count);break;
-                        case 2 : data4.putInt("VALUEJ2",count);break;
-                        case 3 : data4.putInt("VALUEJ3",count);break;
-                        case 4 : data4.putInt("VALUEJ4",count);break;
-                        case 5 : data4.putInt("VALUEJ5",count);break;
-                        case 6 : data4.putInt("VALUEJ6",count);break;
-                        case 7 : data4.putInt("VALUEJ7",count);break;
-                        case 8 : data4.putInt("VALUEJ8",count);break;
-                        case 9 : data4.putInt("VALUEJ9",count);break;
-                        case 10 : data4.putInt("VALUEJ10",count);break;
-                    }
-                    intent.putExtras(data4);
-                    startActivity(intent);
-                }
+        bouton.setOnClickListener(v -> {
+            if (idjoueur2 < nbjoueur){
+                Intent intent = new Intent(
+                        VoteActivity.this,
+                        VoteActivity.class
+                );
+                data4.putInt("IDJOUEUR2",idjoueur2);
+                data4.putInt("VALUEJ"+idjoueur2,count);
+                intent.putExtras(data4);
+                startActivity(intent);
+            }
+            else if (idjoueur2 >= nbjoueur){
+                Intent intent = new Intent(
+                        VoteActivity.this,
+                        FinActivity.class
+                );
+                data4.putInt("VALUEJ"+idjoueur2,count);
+                intent.putExtras(data4);
+                startActivity(intent);
             }
         });
     }
@@ -338,6 +305,5 @@ public class VoteActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
     }
 }
