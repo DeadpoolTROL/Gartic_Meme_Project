@@ -40,13 +40,6 @@ public class CreationmemeActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.themecreate);
         textView.setText("Thème : " + theme);
 
-//______________________________Image MEME__________________________________________________________________
-
-        //ImageView imgMeme = (ImageView) findViewById(R.id.meme);
-        //String imgName = "meme" + randmeme;
-        //int id = getResources().getIdentifier(imgName, "drawable", getPackageName());
-        //imgMeme.setImageResource(id);
-
 //______________________________Image Profil__________________________________________________________________
 
         ImageView imgProfil = findViewById(R.id.imagejoueurx);
@@ -58,10 +51,6 @@ public class CreationmemeActivity extends AppCompatActivity {
         String imgPP = "profil" + idjoueur;
         int id2 = getResources().getIdentifier(imgPP, "drawable", getPackageName());
         imgProfil.setImageResource(id2);
-
-//______________________________Bundle--------------------------------------------------------
-
-
 
 //---------------------------------------Bouton---------------------------------------------------------------------------
 

@@ -13,9 +13,9 @@ import android.widget.TextView;
 public class VoteActivity extends AppCompatActivity {
 
     private Bundle data4;
-    TextView value;
+    private TextView value;
     private int idjoueur2;
-    int count = 0;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -262,14 +262,6 @@ public class VoteActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.themevote);
         textView.setText("Thème : " + theme);
         value=(TextView)findViewById(R.id.voteresult);
-
-//______________________________Image MEME__________________________________________________________________
-
-        //int randmeme = getIntent().getIntExtra("MEME",1);
-        //ImageView imgMeme = (ImageView) findViewById(R.id.Meme);
-        //String imgMM = "meme" + randmeme;
-        //int id2 = getResources().getIdentifier(imgMM, "drawable", getPackageName());
-        //imgMeme.setImageResource(id2);
 
 //---------------------------------------Bouton---------------------------------------------------------------------------
 

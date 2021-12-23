@@ -7,7 +7,9 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
-    Handler handler;
+
+    private Handler handler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +19,5 @@ public class SplashScreenActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         },2000);
-
-        //startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
-        //finish();
     }
 }

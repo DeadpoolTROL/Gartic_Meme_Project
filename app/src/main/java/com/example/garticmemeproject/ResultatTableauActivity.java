@@ -21,9 +21,9 @@ public class ResultatTableauActivity extends AppCompatActivity {
 
     private MediaPlayer mp = null;
     private Bundle data6;
-    Button bouton;
-    ListView listView;
-    ArrayList listeNom = new ArrayList();
+    private Button bouton;
+    private ListView listView;
+    private ArrayList listeNom = new ArrayList();
     private int i;
 
     @Override

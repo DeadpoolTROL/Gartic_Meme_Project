@@ -17,10 +17,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
+
     private MediaPlayer mp = null;
-
-    ImageView Layout;
-
+    private ImageView Layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

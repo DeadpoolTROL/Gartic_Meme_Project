@@ -13,7 +13,7 @@ import android.widget.ImageView;
 
 public class ReglesActivity extends AppCompatActivity {
 
-    ImageView Layout;
+    private ImageView Layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

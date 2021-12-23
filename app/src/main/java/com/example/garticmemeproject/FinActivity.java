@@ -24,7 +24,6 @@ public class FinActivity extends AppCompatActivity {
     private Button bouton;
     private Map<Integer, String> listeScore = new HashMap<>();
     private Set<Integer> indexe = new HashSet<>();
-    private int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +37,9 @@ public class FinActivity extends AppCompatActivity {
 
         int nbjoueur = data5.getInt("NBJOUEUR");
 
-        for (i=1; i<=nbjoueur; i++){
-            listeScore.put(i, String.valueOf(data5.getInt("VALUEJ"+i)));
+        int i;
+        for (i =1; i <=nbjoueur; i++){
+            listeScore.put(i, String.valueOf(data5.getInt("VALUEJ"+ i)));
         }
 
         Map<Integer, String> sortedListeScore = sortByValue(listeScore);
