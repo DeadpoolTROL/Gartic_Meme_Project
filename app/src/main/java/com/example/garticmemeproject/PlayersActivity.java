@@ -18,10 +18,11 @@ public class PlayersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_players);
-
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//On enleve la barre horizontale en haut de l'écran
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);//On met en plein écran
+        setContentView(R.layout.activity_players);//affichage du layout nommé activity_parametre
+//Dans cette activity, on recupère le nom du joueur courant que l'on stock dans un bundle (data2) lorqu'on clique sur le bouton
+//On passe ensuite a CreationmemeActivity
         data2 = getIntent().getExtras();
 
         idjoueur = data2.getInt("IDJOUEUR",0) + 1;
@@ -33,7 +34,7 @@ public class PlayersActivity extends AppCompatActivity {
         String imgName = "profil" + idjoueur;
         int id = getResources().getIdentifier(imgName, "drawable", getPackageName());
         imgView.setImageResource(id);
-
+//_____________________________________Bouton_______________________________________________________
         bouton.setOnClickListener(v -> {
             Intent intent = new Intent(
                     PlayersActivity.this,
