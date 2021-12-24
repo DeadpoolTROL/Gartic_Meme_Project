@@ -24,15 +24,19 @@ public class ResultatTableauActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //On enleve la barre horizontale en haut de l'écran
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); //On met en plein écran
-        setContentView(R.layout.activity_resultat_tableau); //affichage du layout nommé activity_pooltato
+        setContentView(R.layout.activity_resultat_tableau); //affichage du layout nommé activity_resultat_tableau
+
 //______________________________Son__________________________________________________________________
-//On crée un MédiaPlayer mp pour jouer le son "celebration" puis on démare ce lecteur
+//On crée un MédiaPlayer mp pour jouer le son "celebration" puis on démarre ce lecteur
         mp = MediaPlayer.create(this, R.raw.celebration);
         mp.start();
 
-//Dans cette partie on récupère le classement des joueurs avec le bundle data6
-//afin d'afficher le score des joueurs trié
+//______________________________Bundle (Récupération des données)__________________________________________________________________
+//Dans cette partie, on récupère les données que l'on stock dans un bundle que l'on nomme data6
         data6 = getIntent().getExtras();
+
+//______________________________Remplissage du tableau__________________________________________________________________
+//Dans cette partie, on récupère les noms des joueurs et on rempli le tableau
         int nbjoueur = data6.getInt("NBJOUEUR");
         int i;
         for (i =1; i <=nbjoueur; i++){
@@ -45,8 +49,10 @@ public class ResultatTableauActivity extends AppCompatActivity {
             listeNom
         );
         listView.setAdapter(adapter);
-//Lorsque le joueur appui sur le bouton retour on retourne a FinActivity en passant le bundle
-//On arrete aussi le média player
+
+//______________________________Passage à l'activité suivante__________________________________________________________________
+//Dans cette partie, on passe à l'activité suivante lorsque l'on appuie sur le bouton nommé ButtonRetour
+//Dans notre cas, on passe à l'activité "FinActivity"
         Button bouton = findViewById(R.id.ButtonRetour);
         bouton.setOnClickListener(v -> {
             mp.stop();
