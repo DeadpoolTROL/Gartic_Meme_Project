@@ -24,7 +24,7 @@ public class ResultatTableauActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //On enleve la barre horizontale en haut de l'écran
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); //On met en plein écran
-        setContentView(R.layout.activity_pooltato); //affichage du layout nommé activity_pooltato
+        setContentView(R.layout.activity_resultat_tableau); //affichage du layout nommé activity_pooltato
 //______________________________Son__________________________________________________________________
 //On crée un MédiaPlayer mp pour jouer le son "celebration" puis on démare ce lecteur
         mp = MediaPlayer.create(this, R.raw.celebration);
