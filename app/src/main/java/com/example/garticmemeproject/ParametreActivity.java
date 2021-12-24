@@ -41,30 +41,29 @@ public class ParametreActivity extends AppCompatActivity {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
             }
         });
-//______________________________Bouton__________________________________________________________________
-//Lorsque l'on appui sur le bouton on passe a l'activity suivante en passant les paramètres dans le bundle data
+//______________________________Passage à l'activité suivante__________________________________________________________________
+//Dans cette partie, on passe à l'activité suivante lorsque l'on appuie sur le bouton nommée buttoncreation
+//Dans notre cas, on passe à l'activité "CurlyActivity" si il n'y a qu'un seul joueur qui joue.
+//Pour tout autre nombre de joueur, on passe directement à l'activité "PlayersActivity"
         Button bouton;
         bouton = findViewById(R.id.buttonsetting);
         bouton.setOnClickListener(v -> {
             nbjoueur = seekbar.getProgress();
             EditText editText = findViewById(R.id.EditTheme);
             String theme = editText.getText().toString();
-
+//On stock certaines informations dans le bundle comme le thème choisi ou le nombre de joueurs par exemple
             data.putString("THEME", theme);
             data.putInt("IDJOUEUR", idjoueur);
             data.putInt("IDJOUEUR2", idjoueur2);
             data.putInt("NBJOUEUR", nbjoueur);
 
             Intent intent;
-            //Dans le cas où le joueur est seul on le fait passer par CurlyActivity
             if (nbjoueur == 1){
                 intent = new Intent(
                         ParametreActivity.this,
@@ -79,7 +78,6 @@ public class ParametreActivity extends AppCompatActivity {
             }
             intent.putExtras(data);
             startActivity(intent);
-
         });
     }
 }

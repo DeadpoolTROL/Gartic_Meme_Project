@@ -17,9 +17,11 @@ public class ReglesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //On enleve la barre horizontale en haut de l'écran
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); //On met en plein écran
-        setContentView(R.layout.activity_pooltato); //affichage du layout nommé activity_pooltato
+        setContentView(R.layout.activity_regles); //affichage du layout nommé activity_regles
 
-//Ici on affiche le layout activity_regles, lorsque le joueur appuie sur l'écran on passe a ParametreActivity
+//______________________________Passage à l'activité suivante__________________________________________________________________
+//Dans cette partie, on passe à l'activité suivante lorsque l'on appuie sur l'image nommée touchregle
+//Dans notre cas, on passe à l'activité "ParametreActivity"
         ImageView layout = findViewById(R.id.touchregle);
         layout.setOnTouchListener((view, motionEvent) -> {
             Intent intent = new Intent(
