@@ -37,7 +37,6 @@ public class FinActivity extends AppCompatActivity {
 
 //______________________________Bundle (Récupération des données)__________________________________________________________________
 //Dans cette partie, on récupère les données que l'on stock dans un bundle que l'on nomme data5
-        //On stock les données dun le bundle datat5
         data5 = getIntent().getExtras();
 
 //______________________________Classement des joueurs__________________________________________________________________

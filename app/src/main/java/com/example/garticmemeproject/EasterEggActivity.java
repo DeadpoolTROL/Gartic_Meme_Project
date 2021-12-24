@@ -26,7 +26,7 @@ public class EasterEggActivity extends AppCompatActivity {
         setContentView(R.layout.activity_easter_egg); //affichage du layout nommé activity_easter_egg
 
 //______________________________Son__________________________________________________________________
-//Dans cette partie, on créé deux Médiaplayer (ici, "anime_wow" et "bruh")
+//Dans cette partie, on crée deux Médiaplayer (ici, "anime_wow" et "bruh")
         mp1 = MediaPlayer.create(this, R.raw.anime_wow);
         mp2 = MediaPlayer.create(this, R.raw.bruh);
 
