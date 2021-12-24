@@ -20,11 +20,17 @@ public class VoteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //On enleve la barre horizontale en haut de l'écran
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); //On met en plein écran
+
+//______________________________Bundle (Récupération des données)__________________________________________________________________
+//Dans cette partie, on récupère les données que l'on stock dans un bundle que l'on nomme data4
         data4 = getIntent().getExtras();
 
-//---------------------------------------ID joueur---------------------------------------------------------------------------
+//---------------------------------------Info joueur---------------------------------------------------------------------------
+//Dans cette partie, on gère l'affichage du meme ainsi que du texte renseigné précédemment par le joueur lors de l'activité CreationmemeActivity. D'abord on récupère
+//les informations comprise dans le bundle du joueur en cours. C'est à dire le layout du meme précédemment obtenu ainsi que le texte que le joueur a renseigné dans les
+//différents EditText. On affiche ensuite ce texte dans les différents TextView. Enfin, on récupère le score associé au joueur dans le bundle data4.
         int nbjoueur = data4.getInt("NBJOUEUR");
         idjoueur2 = data4.getInt("IDJOUEUR2") + 1;
 
@@ -263,7 +269,10 @@ public class VoteActivity extends AppCompatActivity {
         textView.setText("Thème : " + theme);
         value= findViewById(R.id.voteresult);
 
-//---------------------------------------Bouton---------------------------------------------------------------------------
+//______________________________Passage à l'activité suivante__________________________________________________________________
+//Dans cette partie, on passe à l'activité suivante lorsque l'on appuie sur le bouton nommée buttoncreation
+//Dans notre cas, on passe à l'activité "VoteActivity" tant que tous les joueurs n'ont pas réalisé leur meme.
+// Lorsque tous les joueurs ont joué, alors on passe à l'activité "FinActivity"
 
         Button bouton;
         bouton = findViewById(R.id.buttonvote);
@@ -290,6 +299,8 @@ public class VoteActivity extends AppCompatActivity {
         });
     }
 
+//______________________________Incrémentation du score__________________________________________________________________
+//Dans cette partie, on réalise l'incrémentation du score à chaque appui sur le bouton "+" présent sur le Layout
     public void increment(View v){
         int nbJoueur = data4.getInt("NBJOUEUR");
         if (count >= nbJoueur) count = nbJoueur;
@@ -297,12 +308,16 @@ public class VoteActivity extends AppCompatActivity {
         value.setText("" + count);
     }
 
+//______________________________décrémentation du score__________________________________________________________________
+//Dans cette partie, on réalise la décrémentation du score à chaque appui sur le bouton "-" présent sur le Layout
     public void decrement(View v){
         if (count <= 0) count = 0;
         else count--;
         value.setText("" + count);
     }
 
+//----------------------------------------Retour en arrière--------------------------------------------------------------------------
+//Cette class nous permet d'empêcher de réaliser un retour en arrière
     @Override
     public void onBackPressed() {
     }
