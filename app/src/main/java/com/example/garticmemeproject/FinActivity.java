@@ -31,10 +31,12 @@ public class FinActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_fin);
+        //Création du médiaplayer mp pour jouer le son metal_gear_solid_alert
         mp = MediaPlayer.create(this, R.raw.metal_gear_solid_alert);
-
+        //On stock les données dun le bundle datat5
         data5 = getIntent().getExtras();
-
+//______________________________Classement des joueurs__________________________________________________________________
+//Dans cette partie, on classe les joueurs en fonction de leur score afin d'afficher le podium
         int nbjoueur = data5.getInt("NBJOUEUR");
 
         int i;
@@ -73,7 +75,9 @@ public class FinActivity extends AppCompatActivity {
                 score3.setText(listeScore.get(indice[nbjoueur-3])+"pts");
             }
         }
+//______________________________Boutons__________________________________________________________________
 
+//Bouton permetant de relancer une partie
         Button bouton = findViewById(R.id.buttonfin);
         bouton.setOnClickListener(v -> {
             Intent intent = new Intent(
@@ -83,6 +87,7 @@ public class FinActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+//Bouton permetant d'afficher tout les joueurs dans l'ordre de leur classement
         ImageView layout = findViewById(R.id.podium);
         layout.setOnTouchListener((view, motionEvent) -> {
             Intent intent = new Intent(
@@ -93,7 +98,7 @@ public class FinActivity extends AppCompatActivity {
             startActivity(intent);
             return false;
         });
-
+//Bouton permetant d'acceder a l'EasterEgg
         ImageView layout2 = findViewById(R.id.accessecret);
         layout2.setOnTouchListener((view, motionEvent) -> {
             Intent intent = new Intent(
@@ -111,6 +116,7 @@ public class FinActivity extends AppCompatActivity {
     public void onBackPressed() {
     }
 
+    //Methode permetant de classer une map
     public static <K extends Comparable,V extends Comparable> Map<K,V> sortByValue(Map<K,V> map) {
         List< Map.Entry<K,V> > entries = new LinkedList<>(map.entrySet());
         entries.sort(Map.Entry.comparingByValue());
