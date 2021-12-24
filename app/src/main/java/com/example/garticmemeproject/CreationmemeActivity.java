@@ -32,36 +32,49 @@ public class CreationmemeActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_creationmeme+randmeme);
+
+//______________________________Son__________________________________________________________________
+//Dans cette partie, on créé le Médiaplayer musica_ascenseur
         mp = MediaPlayer.create(this, R.raw.musica_ascenseur);
 
+//______________________________Bundle (stockage des données)__________________________________________________________________
+//Dans cette partie, on stock les données dans un bundle que l'on nomme data3
         data3 = getIntent().getExtras();
 
+//______________________________Récupération et affichage du thème__________________________________________________________________
+//Dans cette partie, on récupère le thème défini dans les paramètres au début et on l'affiche sur le layout à l'emplacement du TextView nommé "themecreate"
         String theme = data3.getString("THEME");
         TextView textView = findViewById(R.id.themecreate);
         textView.setText("Thème : " + theme);
 
 //______________________________Image Profil__________________________________________________________________
+//Dans cette partie, on affiche l'image de profil du joueur qui joue à l'emplacement de l'ImageView nommée "imagejoueurx"
 
         ImageView imgProfil = findViewById(R.id.imagejoueurx);
-        int nbjoueur = data3.getInt("NBJOUEUR");
-
-//______________________________idjoueur__________________________________________________________________
-
         int idjoueur = data3.getInt("IDJOUEUR");
         String imgPP = "profil" + idjoueur;
         int id2 = getResources().getIdentifier(imgPP, "drawable", getPackageName());
         imgProfil.setImageResource(id2);
 
-//---------------------------------------Bouton---------------------------------------------------------------------------
+//______________________________Recupération du nombre de joueur__________________________________________________________________
+//Dans cette partie, on récupère le nombre de joueur défini dans les paramètres au début et on stock la valeur dans la variable "nbjoueur"
+        int nbjoueur = data3.getInt("NBJOUEUR");
 
+//______________________________Passage à l'activité suivante__________________________________________________________________
+//Dans cette partie, on passe à l'activité suivante lorsque l'on appuie sur le bouton nommée buttoncreation
+//Dans notre cas, on passe à l'activité "PlayersActivity" tant que tous les joueurs n'ont pas réalisé leur meme.
+// Lorsque tous les joueurs ont joué, alors on passe à l'activité "VoteActivity"
         Button bouton;
         bouton = findViewById(R.id.buttoncreation);
         bouton.setOnClickListener(v -> {
+
+// On arrête la musique et le timer avant de passer à l'activité suivante
             mp.stop();
             if (countDownTimer != null){
                 countDownTimer.cancel();
             }
 
+// Cas où les joueurs n'ont pas tous réalisé leur meme
             Intent intent;
             if (idjoueur < nbjoueur){
                 intent = new Intent(
@@ -69,6 +82,8 @@ public class CreationmemeActivity extends AppCompatActivity {
                         PlayersActivity.class
                 );
             }
+
+// Cas où tous les joueurs ont tous réalisé leur meme
             else {
                 intent = new Intent(
                         CreationmemeActivity.this,
@@ -79,23 +94,29 @@ public class CreationmemeActivity extends AppCompatActivity {
             actionJoueur(idjoueur);
             intent.putExtras(data3);
             startActivity(intent);
-
         });
 
+//Dans cette partie, on gère le temps en utilisant les classes réalisé tout en bas du code
         time = findViewById(R.id.time);
         updateTimer();
         startTimer();
     }
 
-//----------------------------------------Timer--------------------------------------------------------------------------
+//----------------------------------------Gestion Timer--------------------------------------------------------------------------
+//Dans cette partie, on gère le timer
     public void startTimer(){
         countDownTimer = new CountDownTimer(timeLeftInMilliseconds, 1000) {
+
+//Ici, on update le timer
             @Override
             public void onTick(long l) {
                 timeLeftInMilliseconds = l;
                 updateTimer();
             }
 
+//Ici, on gère les action à réalisé lorsque le timer est fini.
+//Dans notre cas, on passe à l'activité "PlayersActivity" tant que tous les joueurs n'ont pas réalisé leur meme.
+//Lorsque tous les joueurs ont joué, alors on passe à l'activité "VoteActivity"
             @Override
             public void onFinish() {
                 int nbjoueur = data3.getInt("NBJOUEUR");
@@ -120,7 +141,8 @@ public class CreationmemeActivity extends AppCompatActivity {
             }
         }.start();
     }
-
+//----------------------------------------Update Timer--------------------------------------------------------------------------
+//Dans cette partie, on update le timer toutes les secondes et également la barre de progression.
     public void updateTimer(){
         int minute = (int) timeLeftInMilliseconds / 60000;
         int seconde = (int) timeLeftInMilliseconds % 60000 / 1000;
@@ -136,18 +158,25 @@ public class CreationmemeActivity extends AppCompatActivity {
         time.setText(timeleftText);
         progress = progress - 1;
         progressBar.setProgress(progress); // Default 0.
-        if (timeLeftInMilliseconds<=10000) mp.start();
+        if (timeLeftInMilliseconds<=10000) mp.start(); //Si atteint 10 secondes, on lance le son du Médiaplayer mp
     }
 
+//----------------------------------------Génération nombre aléatoire--------------------------------------------------------------------------
+//Cette class nous permet de généré un nombre aléatoire, ici on récupère un des nombres suivants : 1 ; 2 ; 3 ; 4 ; 5 ; 6
     public int hazard(){
         Random rand = new Random();
         return (rand.nextInt(6) + 1);
     }
 
+//----------------------------------------Retour en arrière--------------------------------------------------------------------------
+//Cette class nous permet d'empêcher de réaliser un retour en arrière
     @Override
     public void onBackPressed() {
     }
 
+//----------------------------------------Gestion des Joueurs--------------------------------------------------------------------------
+//Cette class nous permet de gérer le profil des joueurs. D'abord on créé un bundle pour chaque joueur dans lequel on renseigne le layout du meme utilisé
+//Ensuite, selon le meme utilisé, on récupère le texte renseigné dans les EditText (maximum 3 EditText)et on les stock toutes les données dans le bundle du joueur
     public void actionJoueur(int Jx){
         if (Jx == 1){
             Bundle Joueur1 = new Bundle();
