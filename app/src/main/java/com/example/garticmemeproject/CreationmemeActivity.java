@@ -29,16 +29,16 @@ public class CreationmemeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_creationmeme+randmeme);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //On enleve la barre horizontale en haut de l'écran
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); //On met en plein écran
+        setContentView(R.layout.activity_creationmeme+randmeme);//affichage du layout nommé activity_creationmeme1 ; activity_creationmeme2 ; activity_creationmeme3 ; activity_creationmeme4 ; activity_creationmeme5 ; activity_creationmeme6
 
 //______________________________Son__________________________________________________________________
 //Dans cette partie, on créé le Médiaplayer musica_ascenseur
         mp = MediaPlayer.create(this, R.raw.musica_ascenseur);
 
-//______________________________Bundle (stockage des données)__________________________________________________________________
-//Dans cette partie, on stock les données dans un bundle que l'on nomme data3
+//______________________________Bundle (Récupération des données)__________________________________________________________________
+//Dans cette partie, on récupère les données que l'on stock dans un bundle que l'on nomme data3
         data3 = getIntent().getExtras();
 
 //______________________________Récupération et affichage du thème__________________________________________________________________

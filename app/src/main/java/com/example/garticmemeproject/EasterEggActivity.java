@@ -30,8 +30,8 @@ public class EasterEggActivity extends AppCompatActivity {
         mp1 = MediaPlayer.create(this, R.raw.anime_wow);
         mp2 = MediaPlayer.create(this, R.raw.bruh);
 
-//______________________________Bundle (stockage des données)__________________________________________________________________
-//Dans cette partie, on stock les données dans un bundle que l'on nomme data8
+//______________________________Bundle (Récupération des données)__________________________________________________________________
+//Dans cette partie, on récupère les données que l'on stock dans un bundle que l'on nomme data8
         data8 = getIntent().getExtras();
 
 //______________________________retour à l'Activité précédente__________________________________________________________________

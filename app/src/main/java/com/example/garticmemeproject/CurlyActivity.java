@@ -6,6 +6,8 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 public class CurlyActivity extends AppCompatActivity {
@@ -16,15 +18,17 @@ public class CurlyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_curly);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //On enleve la barre horizontale en haut de l'écran
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); //On met en plein écran
+        setContentView(R.layout.activity_curly);//affichage du layout nommé activity_curly
 
 //______________________________Son__________________________________________________________________
 //Dans cette partie, on joue le son selectionné (ici, le son qui s'appel "ta_pas_damis_prend_un_curly_flo")
         MediaPlayer mp = MediaPlayer.create(this, R.raw.ta_pas_damis_prend_un_curly_flo);
         mp.start();
 
-//______________________________Bundle (stockage des données)__________________________________________________________________
-//Dans cette partie, on stock les données dans un bundle que l'on nomme dataCurly
+//______________________________Bundle (Récupération des données)__________________________________________________________________
+//Dans cette partie, on récupère les données que l'on stock dans un bundle que l'on nomme dataCurly
         dataCurly = getIntent().getExtras();
 
 //______________________________Passage à l'activité suivante__________________________________________________________________
